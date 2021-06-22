@@ -1,0 +1,31 @@
+Skills
+	Kettenblitz
+	Flammenwerfer
+	Springen
+	Dash
+	
+Dungeon
+	1 Level
+	Lighting
+	Räume (secrets)
+	interactable objects
+	
+Gegner
+	1x Nahkampf
+	1x Fernkampf
+	
+Kampfverhalten vom Charakter
+	Kampfanimation
+	
+Sounds
+	Angriffe
+	Umwelt
+	Schaden nehmen
+	Charakter Synchro (z.B. beim Gegner töten)
+	
+Tests
+	Tests für Skills (Playmode)
+	Bewegung
+	Gegner
+	und alles was sonst noch an code da ist
+	(Marco muss noch Code Coverage zeigen)
