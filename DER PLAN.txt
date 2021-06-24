@@ -1,16 +1,16 @@
 Skills
-	Kettenblitz
-	Flammenwerfer
-	Springen
-	Dash
+	Kettenblitz (Johann)
+	Flammenwerfer (Julius)
+	Springen (Julius)
+	Dash (Julius)
 	
-Dungeon
+Dungeon (Johann)
 	1 Level
 	Lighting
 	Räume (secrets)
 	interactable objects
 	
-Gegner
+Gegner (Lennard)
 	1x Nahkampf
 	1x Fernkampf
 	
