@@ -3,16 +3,12 @@ using UnityEngine.AI;
 
 public class PlayerBehaviour : CharacterBehaviour
 {
-    private ActionManager actionManager;
+    ActionManager actionManager;
+    DashActionHandler dashActionHandler;
+    JumpActionHandler jumpActionHandler;
 
     [SerializeField]
-    private NavMeshAgent agent;
-
-    public Vector3 jump;
-    public float jumpForce = 4.0f;
-    
-    public bool isGrounded;
-    public bool isDashing;
+    NavMeshAgent agent;
 
     Rigidbody rb;
     NavMeshAgent nma;
@@ -24,11 +20,6 @@ public class PlayerBehaviour : CharacterBehaviour
 
     private void FixedUpdate()
     {
-    }
-
-    void OnCollisionStay() {
-        enableNavigator();
-        isGrounded = true;
     }
 
     // Start is called before the first frame update
@@ -44,16 +35,11 @@ public class PlayerBehaviour : CharacterBehaviour
         rb = GetComponent<Rigidbody>();
         nma = GetComponent<NavMeshAgent>();
 
-        jump = new Vector3(0.0f, 2.0f, 0.0f);
-
-        //
         actionManager = gameObject.AddComponent<ActionManager>() as ActionManager;
         actionManager.SetUser(gameObject);
 
-        //initialize player data
-
-        //initialize comet data
-        //
+        dashActionHandler = gameObject.AddComponent<DashActionHandler>();
+        jumpActionHandler = gameObject.AddComponent<JumpActionHandler>();
     }
 
     private void watchNavAgent() {
@@ -71,49 +57,10 @@ public class PlayerBehaviour : CharacterBehaviour
         }
     }
 
-    private void disableNavigator() {
-        rb.isKinematic = false;
-        nma.enabled = false;
-    }
-
-    private void enableNavigator() {
-        rb.isKinematic = true;
-        nma.enabled = true;
-    }
-
-    private void performDash() {
-        Vector3 movementVelocity = nma.velocity;
-        movementVelocity.y = 0;
-
-        disableNavigator();
-
-        rb.AddForce(movementVelocity * 10.0f, ForceMode.Impulse);
-    }
-
-    private void watchDashVelocity() {
-        if(isDashing && rb.velocity == Vector3.negativeInfinity) {
-            enableNavigator();
-        }
-    }
-
-    private void watchJumpAction() {
-        if(Input.GetKeyDown(KeyCode.Space) && !isDashing) {
-            Vector3 movementVelocity = nma.velocity;
-
-            disableNavigator();
-
-            isGrounded = false;
-
-            rb.AddForce(jump * jumpForce, ForceMode.Impulse);
-            rb.AddForce(movementVelocity * 50, ForceMode.Impulse);
-        }
-    }
-
     // Update is called once per frame
     private void Update()
     {
         watchNavAgent();
-        watchJumpAction();
 
         if (Stuff.GetButtonDown("Hotkey1"))
         {
@@ -122,10 +69,6 @@ public class PlayerBehaviour : CharacterBehaviour
             {
                 agent.SetDestination(temp);
             }
-        }
-        if (Stuff.GetButtonDown("Hotkey2"))
-        {
-            performDash();
         }
         if (Stuff.GetButtonDown("Hotkey3"))
         {
