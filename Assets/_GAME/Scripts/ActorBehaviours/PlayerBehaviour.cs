@@ -1,79 +1,73 @@
-﻿using UnityEngine;
+﻿using System;
+using UnityEngine;
 using UnityEngine.AI;
 
-public class PlayerBehaviour : CharacterBehaviour
+public class PlayerBehaviour : BaseEntity
 {
-    private ActionManager actionManager;
+    [SerializeField] private LayerMask navigationLayer;
+    [SerializeField] private NavMeshAgent agent;
+    [SerializeField] private GameObject destinationIndicator;
 
-    [SerializeField]
-    private NavMeshAgent agent;
-
-    private void AddAction(ActionHandler ah)
+    private void Awake()
     {
-        actionManager.AddAction(ah);
+        agent = GetComponent<NavMeshAgent>();
     }
 
-    private void FixedUpdate()
-    {
-    }
-
-    // Start is called before the first frame update
-    private void Start()
-    {
-        health = 20;
-        mana = 10;
-        baseMovementSpeed = 5;
-        movementSpeedModifier = 1;
-        cdr = 0.3f;
-        range = 2;
-
-        //
-        actionManager = gameObject.AddComponent<ActionManager>() as ActionManager;
-        actionManager.SetUser(gameObject);
-
-        //initialize player data
-
-        //initialize comet data
-        //
-    }
-
-    // Update is called once per frame
     private void Update()
     {
-        //set agents speed every frame
-        agent.speed = baseMovementSpeed * movementSpeedModifier;
-
-        if (actionManager.IsCasting())
+        if (Input.GetMouseButton(0))
         {
-            agent.isStopped = true;
-        }
-        else
-        {
-            agent.isStopped = false;
+            SetDestinationToMousePosition();
         }
 
-        //handle input
-        if (Stuff.GetButtonDown("Hotkey1"))
+        if (destinationIndicator && hasReachedDestination())
         {
-            Vector3 temp = Stuff.Intersect();
-            if (!temp.Equals(Vector3.negativeInfinity))
+            destinationIndicator.SetActive(false);
+        }
+    }
+
+    private bool hasReachedDestination()
+    {
+        // Debug.Log($"path pendng: {agent.pathPending}, remainingDistance: {agent.remainingDistance}, hasPath: {agent.hasPath}");
+        if (agent.pathPending) return false;
+        if (agent.remainingDistance > agent.stoppingDistance) return false;
+        if (agent.hasPath) return false;
+        
+        return true;
+    }
+    
+    void SetDestinationToMousePosition()
+    {
+        RaycastHit hit;
+        Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+        if (Physics.Raycast(ray, out hit, 1000f, navigationLayer))
+        {
+            Debug.Log($"Destiny is at {hit.point}");
+
+            if (agent.SetDestination(hit.point))
             {
-                agent.SetDestination(temp);
+                destinationIndicator.transform.position = hit.point;
+                destinationIndicator.SetActive(true);
             }
         }
-        if (Stuff.GetButtonDown("Hotkey2"))
+    }
+    
+    // Returns effective damage taken
+    public override float TakeDamage(float dmg, DamageTypes type)
+    {
+        float damageMultiplier = 1;
+
+        if (type == DamageTypes.Kinetic)
         {
-            if (actionManager.Use("Action1"))
-            {
-                //action was used
-            }
+            damageMultiplier = 1.5f;
         }
-        if (Stuff.GetButtonDown("Hotkey3"))
-        {
-            if (actionManager.Use("Action2"))
-            {
-                //action was used
-            }
-        }
+
+        float damage = dmg * damageMultiplier;
+
+
+        Health = Math.Max(Health - damage, 0);
+
+        Debug.Log($"Player Health {Health}");
+        return damage;
     }
 }

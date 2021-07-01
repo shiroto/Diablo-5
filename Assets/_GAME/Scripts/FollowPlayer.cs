@@ -1,27 +1,15 @@
-﻿using System.Collections;
-using System.Collections.Generic;
+﻿using System;
 using UnityEngine;
+using UnityEngine.AI;
 
 public class FollowPlayer : MonoBehaviour
 {
     public Transform player;
-    // Start is called before the first frame update
-    void Start()
-    {
-        if (player == null)
-        {
-            GameObject[] players = GameObject.FindGameObjectsWithTag("Player");
-            if (players.Length == 0)
-            {
-                Destroy(gameObject);
-            }
-            player = players[0].transform;
-        }
-    }
+    public NavMeshAgent navMeshAgent;
 
-    // Update is called once per frame
-    void Update()
+
+    void FixedUpdate()
     {
-        transform.position = new Vector3(player.position.x - 6.88f, player.position.y + 10, player.position.z - 6.88f);
+        // navMeshAgent.SetDestination(player.position);
     }
 }

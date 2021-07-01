@@ -8,7 +8,6 @@ public class Stuff : MonoBehaviour
     static Dictionary<string, KeyCode> buttons;
     public static Plane world;
 
-    // Start is called before the first frame update
     void Start()
     {
         buttons = new Dictionary<string, KeyCode>
@@ -20,13 +19,6 @@ public class Stuff : MonoBehaviour
             ["Hotkey5"] = KeyCode.E,
             ["Hotkey6"] = KeyCode.R
         };
-
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
     }
 
     public static bool GetButtonDown(string buttonName)
@@ -48,7 +40,8 @@ public class Stuff : MonoBehaviour
         // Does the ray intersect any objects excluding the player layer
         if (Physics.Raycast(r.origin, r.direction, out RaycastHit hit, Mathf.Infinity, layerMask))
         {
-            return r.GetPoint(hit.distance);
+            var h = r.GetPoint(hit.distance);
+            return h;
         }
         else
         {
