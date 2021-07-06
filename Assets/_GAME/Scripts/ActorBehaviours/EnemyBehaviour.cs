@@ -1,41 +1,92 @@
-﻿using System.Collections;
-using System.Collections.Generic;
+﻿using System;
+using System.Collections;
+using Newtonsoft.Json.Serialization;
 using UnityEngine;
+using UnityEngine.AI;
 
-public class EnemyBehaviour : MonoBehaviour
+public class EnemyBehaviour : BaseEntity
 {
-    public float health;
-    public float speed;
-    public float damage;
-    public int level;
+    [SerializeField] private NavMeshAgent navAgent;
+    [SerializeField] private Collider attackArea;
+    [SerializeField] private Animator animator;
+    
+    private bool isAttacking = false;
+    private Transform player;
 
-    public Transform player;
+    public AnimationCurve speedByHealth;
 
-
-    // Start is called before the first frame update
-    void Start()
+    private void Awake()
     {
-        level = 1;
+        navAgent = GetComponent<NavMeshAgent>();
+        player = GameObject.FindGameObjectWithTag("Player").transform;
     }
 
-    // Update is called once per frame
+    private void Start()
+    {
+        attackArea.enabled = false;
+    }
+
     void Update()
     {
-        if(health <= 0)
+        if (isAttacking)
         {
-            DropLoot();
+            navAgent.speed = 0;
+            navAgent.angularSpeed = 120;
+        }
+        else
+        {
+            navAgent.speed = 3.5f;
+            navAgent.angularSpeed = 360000;
+            FollowPlayer();
+        }
+
+        animator.SetBool("isAttacking", isAttacking);
+        animator.SetFloat("velocity", navAgent.velocity.magnitude);
+
+
+        // float healthRatio = Health / MaxHealth;
+        // navMeshAgent.speed = speedByHealth.Evaluate(healthRatio) * speedMultiplier;
+
+        if (Health <= 0)
+        {
             Destroy(gameObject);
         }
     }
 
-    private void DropLoot()
+    public IEnumerator Attack()
     {
+        Debug.Log("ATTACK NOW!");
+        isAttacking = true;
 
+        yield return new WaitForSeconds(2);
+
+        attackArea.enabled = true;
+
+        yield return null;
+        yield return null;
+        yield return null;
+
+        isAttacking = false;
     }
 
-    public void SetLevel(int lvl)
+    private void FollowPlayer()
     {
-        health += 5 * lvl;
-        damage += 2 * lvl;
+        navAgent.destination = player.position;
+    }
+
+
+    public override float TakeDamage(float dmg, DamageTypes type)
+    {
+        float damageMultiplier = 1;
+
+        if (isAttacking)
+        {
+            damageMultiplier = 2;
+        }
+
+        float effectiveDamage = dmg * damageMultiplier;
+
+        Health -= effectiveDamage;
+        return effectiveDamage;
     }
 }

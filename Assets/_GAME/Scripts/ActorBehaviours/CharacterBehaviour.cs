@@ -2,17 +2,14 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class CharacterBehaviour : MonoBehaviour
+public abstract class CharacterBehaviour : BaseEntity
 {
 
+    [SerializeField]
     protected float health;
     protected float mana;
     protected float cdr;
     protected float castSpeed;
-    protected float attackSpeed;
-    protected float attackDamage;
-    protected float spellDamage;
-    protected float genericDamage;
     protected float baseMovementSpeed;
     protected float movementSpeedModifier;
     protected float durationModifier;
@@ -27,17 +24,4 @@ public class CharacterBehaviour : MonoBehaviour
 
     public float GetCastSpeed()
     { return castSpeed; }
-
-
-    // Start is called before the first frame update
-    void Start()
-    {
-
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 }
