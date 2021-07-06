@@ -6,12 +6,12 @@ using UnityEngine.AI;
 
 public class EnemyBehaviour : BaseEntity
 {
-    [SerializeField] private NavMeshAgent navAgent;
-    [SerializeField] private Collider attackArea;
-    [SerializeField] private Animator animator;
-    
-    private bool isAttacking = false;
-    private Transform player;
+    [SerializeField] protected NavMeshAgent navAgent;
+    [SerializeField] protected Collider attackArea;
+    [SerializeField] protected Animator animator;
+
+    protected bool isAttacking = false;
+    protected Transform player;
 
     public AnimationCurve speedByHealth;
 
@@ -25,25 +25,12 @@ public class EnemyBehaviour : BaseEntity
     {
         attackArea.enabled = false;
     }
-
-    void Update()
+    
+    protected virtual void Update()
     {
-        if (isAttacking)
-        {
-            navAgent.speed = 0;
-            navAgent.angularSpeed = 120;
-        }
-        else
-        {
-            navAgent.speed = 3.5f;
-            navAgent.angularSpeed = 360000;
-            FollowPlayer();
-        }
-
         animator.SetBool("isAttacking", isAttacking);
         animator.SetFloat("velocity", navAgent.velocity.magnitude);
-
-
+        
         // float healthRatio = Health / MaxHealth;
         // navMeshAgent.speed = speedByHealth.Evaluate(healthRatio) * speedMultiplier;
 
@@ -52,6 +39,7 @@ public class EnemyBehaviour : BaseEntity
             Destroy(gameObject);
         }
     }
+
 
     public IEnumerator Attack()
     {
@@ -69,7 +57,7 @@ public class EnemyBehaviour : BaseEntity
         isAttacking = false;
     }
 
-    private void FollowPlayer()
+    protected void FollowPlayer()
     {
         navAgent.destination = player.position;
     }
