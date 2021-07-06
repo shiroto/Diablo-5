@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-public class CharacterBehaviour : MonoBehaviour
+public abstract class CharacterBehaviour : BaseEntity
 {
 
     [SerializeField]
@@ -38,17 +38,4 @@ public class CharacterBehaviour : MonoBehaviour
 
     public float GetCastSpeed()
     { return castSpeed; }
-
-
-    // Start is called before the first frame update
-    void Start()
-    {
-
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 }

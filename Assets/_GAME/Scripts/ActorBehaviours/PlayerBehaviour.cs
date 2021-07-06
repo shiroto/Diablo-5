@@ -1,47 +1,32 @@
-﻿using UnityEngine;
+﻿using System;
+using UnityEngine;
 using UnityEngine.AI;
 
-public class PlayerBehaviour : CharacterBehaviour
+public class PlayerBehaviour : BaseEntity
 {
+    [SerializeField] private LayerMask navigationLayer;
+    [SerializeField] private NavMeshAgent agent;
+    [SerializeField] private GameObject destinationIndicator;
+    
     ActionManager actionManager;
     DashActionHandler dashActionHandler;
     JumpActionHandler jumpActionHandler;
 
-    [SerializeField]
-    NavMeshAgent agent;
-
-    Rigidbody rb;
-    NavMeshAgent nma;
-
-    private void AddAction(ActionHandler ah)
+    private void Awake()
     {
-        actionManager.AddAction(ah);
+        agent = GetComponent<NavMeshAgent>();
     }
-
-    private void FixedUpdate()
-    {
-    }
-
+    
     // Start is called before the first frame update
     private void Start()
     {
-        health = 20;
-        mana = 10;
-        baseMovementSpeed = 5;
-        movementSpeedModifier = 1;
-        cdr = 0.3f;
-        range = 2;
-
-        rb = GetComponent<Rigidbody>();
-        nma = GetComponent<NavMeshAgent>();
-
         actionManager = gameObject.AddComponent<ActionManager>() as ActionManager;
         actionManager.SetUser(gameObject);
 
         dashActionHandler = gameObject.AddComponent<DashActionHandler>();
         jumpActionHandler = gameObject.AddComponent<JumpActionHandler>();
     }
-
+    
     private void watchNavAgent() {
         if(agent.enabled) {
             agent.speed = baseMovementSpeed * movementSpeedModifier;
@@ -57,7 +42,6 @@ public class PlayerBehaviour : CharacterBehaviour
         }
     }
 
-    // Update is called once per frame
     private void Update()
     {
         watchNavAgent();
@@ -77,5 +61,60 @@ public class PlayerBehaviour : CharacterBehaviour
                 //action was used
             }
         }
+        
+        if (Input.GetMouseButton(0))
+        {
+            SetDestinationToMousePosition();
+        }
+
+        if (destinationIndicator && hasReachedDestination())
+        {
+            destinationIndicator.SetActive(false);
+        }
+    }
+
+    private bool hasReachedDestination()
+    {
+        // Debug.Log($"path pendng: {agent.pathPending}, remainingDistance: {agent.remainingDistance}, hasPath: {agent.hasPath}");
+        if (agent.pathPending) return false;
+        if (agent.remainingDistance > agent.stoppingDistance) return false;
+        if (agent.hasPath) return false;
+        
+        return true;
+    }
+    
+    void SetDestinationToMousePosition()
+    {
+        RaycastHit hit;
+        Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+        if (Physics.Raycast(ray, out hit, 1000f, navigationLayer))
+        {
+            Debug.Log($"Destiny is at {hit.point}");
+
+            if (agent.SetDestination(hit.point))
+            {
+                destinationIndicator.transform.position = hit.point;
+                destinationIndicator.SetActive(true);
+            }
+        }
+    }
+    
+    // Returns effective damage taken
+    public override float TakeDamage(float dmg, DamageTypes type)
+    {
+        float damageMultiplier = 1;
+
+        if (type == DamageTypes.Kinetic)
+        {
+            damageMultiplier = 1.5f;
+        }
+
+        float damage = dmg * damageMultiplier;
+
+
+        Health = Math.Max(Health - damage, 0);
+
+        Debug.Log($"Player Health {Health}");
+        return damage;
     }
 }
