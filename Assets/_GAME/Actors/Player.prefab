@@ -51,7 +51,11 @@ MonoBehaviour:
   speed: 0
   maxHealth: 0
   health: 0
+  navigationLayer:
+    serializedVersion: 2
+    m_Bits: 256
   agent: {fileID: 1702290595}
+  destinationIndicator: {fileID: 0}
 --- !u!136 &4228291253619951468
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -97,10 +101,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 43610748659428494}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 63e5ded90ec605543826d39328f72f65, type: 3}
+  m_Script: {fileID: 11500000, guid: d1d869639cea4a2493c2a7d29572d15e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damageableEntity: {fileID: -9122746881363791691}
+  damageableEntity: {fileID: 0}
 --- !u!1 &2531098332013801092
 GameObject:
   m_ObjectHideFlags: 0
