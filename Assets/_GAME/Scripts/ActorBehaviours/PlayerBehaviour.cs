@@ -21,7 +21,7 @@ public class PlayerBehaviour : BaseEntity
             SetDestinationToMousePosition();
         }
 
-        if (Input.GetMouseButtonDown(1))
+        if (Input.GetKeyDown(KeyCode.Q))
         {
             LightningAttack();
         }

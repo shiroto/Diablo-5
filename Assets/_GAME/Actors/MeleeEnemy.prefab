@@ -44,7 +44,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d1d869639cea4a2493c2a7d29572d15e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damageableEntity: {fileID: 2319673246198150629}
+  damageableEntity: {fileID: 0}
 --- !u!136 &8950714105686214368
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -125,7 +125,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b7803db583c4b0e41b41f3d5fe21f177, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemy: {fileID: 2319673246198150629}
+  enemy: {fileID: 0}
 --- !u!1 &7915869753505200463
 GameObject:
   m_ObjectHideFlags: 0
@@ -239,10 +239,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 8828702459716426784}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 04f4859284b267a4495e34032a2bef29, type: 3}
+  m_Script: {fileID: 11500000, guid: b4b92405a1d88bc4daaca92559bdea9a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 0
+  speed: 5
   maxHealth: 30
   health: 30
   navAgent: {fileID: 3474688463615535980}
