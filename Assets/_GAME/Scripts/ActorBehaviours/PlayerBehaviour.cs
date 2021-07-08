@@ -7,6 +7,7 @@ public class PlayerBehaviour : BaseEntity
     [SerializeField] private LayerMask navigationLayer;
     [SerializeField] private NavMeshAgent agent;
     [SerializeField] private GameObject destinationIndicator;
+    [SerializeField] private GameObject lightningAttack;
 
     private void Awake()
     {
@@ -18,6 +19,11 @@ public class PlayerBehaviour : BaseEntity
         if (Input.GetMouseButton(0))
         {
             SetDestinationToMousePosition();
+        }
+
+        if (Input.GetKeyDown(KeyCode.Q))
+        {
+            LightningAttack();
         }
 
         if (destinationIndicator && hasReachedDestination())
@@ -49,6 +55,17 @@ public class PlayerBehaviour : BaseEntity
                 destinationIndicator.transform.position = hit.point;
                 destinationIndicator.SetActive(true);
             }
+        }
+    }
+
+    void LightningAttack()
+    {
+        RaycastHit hit;
+        Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+        if (Physics.Raycast(ray, out hit, 1000f, navigationLayer))
+        {
+            GameObject lightning = Instantiate(lightningAttack, hit.point, Quaternion.identity);
+            lightning.SetActive(true);
         }
     }
     
