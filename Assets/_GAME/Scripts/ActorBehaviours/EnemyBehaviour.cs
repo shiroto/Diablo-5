@@ -4,7 +4,7 @@ using Newtonsoft.Json.Serialization;
 using UnityEngine;
 using UnityEngine.AI;
 
-public class EnemyBehaviour : BaseEntity
+public abstract class EnemyBehaviour : BaseEntity
 {
     [SerializeField] protected NavMeshAgent navAgent;
     [SerializeField] protected Collider attackArea;
@@ -41,21 +41,7 @@ public class EnemyBehaviour : BaseEntity
     }
 
 
-    public IEnumerator Attack()
-    {
-        Debug.Log("ATTACK NOW!");
-        isAttacking = true;
-
-        yield return new WaitForSeconds(2);
-
-        attackArea.enabled = true;
-
-        yield return null;
-        yield return null;
-        yield return null;
-
-        isAttacking = false;
-    }
+    public abstract IEnumerator Attack();
 
     protected void FollowPlayer()
     {
