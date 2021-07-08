@@ -13,7 +13,7 @@ public class LightningAttack : MonoBehaviour
         StartCoroutine(Attack());
     }
 
-    private IEnumerator Attack()
+    public IEnumerator Attack()
     {
         attackArea.gameObject.SetActive(true);
         yield return new WaitForSeconds(0.9f);

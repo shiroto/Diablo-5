@@ -96,7 +96,7 @@ GameObject:
   - component: {fileID: 999748867663681123}
   - component: {fileID: 1730380053496317636}
   m_Layer: 10
-  m_Name: Lightning Attack
+  m_Name: LightningAttack
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
