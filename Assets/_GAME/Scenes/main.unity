@@ -783,16 +783,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 5145230520634351931, guid: 31eaecec06dbfe14784d79f27c02c5f6,
-        type: 3}
-      propertyPath: m_Avatar
-      value: 
-      objectReference: {fileID: 9000000, guid: ee8ab15e8a37bfc428e740333881df8b, type: 3}
-    - target: {fileID: 5145230520634351931, guid: 31eaecec06dbfe14784d79f27c02c5f6,
-        type: 3}
-      propertyPath: m_Enabled
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: -9122746881363791691, guid: ef3f21662b82af5479d8c17b2e13ccee,
         type: 3}
       propertyPath: speed
@@ -916,6 +906,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_ApplyRootMotion
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5145230520634351931, guid: 31eaecec06dbfe14784d79f27c02c5f6,
+        type: 3}
+      propertyPath: m_Avatar
+      value: 
+      objectReference: {fileID: 9000000, guid: ee8ab15e8a37bfc428e740333881df8b, type: 3}
+    - target: {fileID: 5145230520634351931, guid: 31eaecec06dbfe14784d79f27c02c5f6,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 8724099057989784147, guid: ef3f21662b82af5479d8c17b2e13ccee, type: 3}
