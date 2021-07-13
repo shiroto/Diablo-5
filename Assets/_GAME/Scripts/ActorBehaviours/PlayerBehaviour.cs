@@ -48,8 +48,6 @@ public class PlayerBehaviour : BaseEntity
         Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
         if (Physics.Raycast(ray, out hit, 1000f, navigationLayer))
         {
-            Debug.Log($"Destiny is at {hit.point}");
-
             if (agent.SetDestination(hit.point))
             {
                 destinationIndicator.transform.position = hit.point;
@@ -84,7 +82,6 @@ public class PlayerBehaviour : BaseEntity
 
         Health = Math.Max(Health - damage, 0);
 
-        Debug.Log($"Player Health {Health}");
         return damage;
     }
 }

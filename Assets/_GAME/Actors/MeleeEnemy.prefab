@@ -44,7 +44,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d1d869639cea4a2493c2a7d29572d15e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damageableEntity: {fileID: 0}
+  damageableEntity: {fileID: 2319673246198150629}
 --- !u!136 &8950714105686214368
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -246,7 +246,6 @@ MonoBehaviour:
   maxHealth: 30
   health: 30
   navAgent: {fileID: 3474688463615535980}
-  attackArea: {fileID: 6976363569452156545}
   animator: {fileID: 4938739739863550752}
   speedByHealth:
     serializedVersion: 2
@@ -254,6 +253,7 @@ MonoBehaviour:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+  attackArea: {fileID: 6976363569452156545}
 --- !u!114 &2104629052
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -7,7 +7,6 @@ using UnityEngine.AI;
 public abstract class EnemyBehaviour : BaseEntity
 {
     [SerializeField] protected NavMeshAgent navAgent;
-    [SerializeField] protected Collider attackArea;
     [SerializeField] protected Animator animator;
 
     protected bool isAttacking = false;
@@ -20,12 +19,6 @@ public abstract class EnemyBehaviour : BaseEntity
         navAgent = GetComponent<NavMeshAgent>();
         player = GameObject.FindGameObjectWithTag("Player").transform;
     }
-
-    private void Start()
-    {
-        attackArea.enabled = false;
-    }
-    
     protected virtual void Update()
     {
         animator.SetBool("isAttacking", isAttacking);

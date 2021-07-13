@@ -12,8 +12,6 @@ public class AttackTrigger : MonoBehaviour
         BaseEntity entity = other.gameObject.GetComponent<BaseEntity>();
         if (entity != null)
         {
-            Debug.Log("Is this where it happens?");
-            Debug.Log(enemy);
             StartCoroutine(enemy.Attack());
         }
     }

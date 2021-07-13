@@ -4,6 +4,13 @@ using UnityEngine;
 
 public class MeeleEnemyBehaviour : EnemyBehaviour
 {
+    [SerializeField] protected Collider attackArea;
+
+    private void Start()
+    {
+        attackArea.enabled = false;
+    }
+
     protected override void Update()
     {
         base.Update();
@@ -24,7 +31,7 @@ public class MeeleEnemyBehaviour : EnemyBehaviour
     
     public override IEnumerator Attack()
     {
-        Debug.Log("ATTACK NOW!");
+        Debug.Log("MeleeEnemy attacking...");
         isAttacking = true;
 
         yield return new WaitForSeconds(2);

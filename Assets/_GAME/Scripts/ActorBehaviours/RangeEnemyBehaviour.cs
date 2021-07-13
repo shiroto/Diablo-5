@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class RangeEnemyBehaviour : EnemyBehaviour
 {
+    [SerializeField] private GameObject projectile;
+    
     protected override void Update()
     {
         base.Update();
@@ -23,17 +25,13 @@ public class RangeEnemyBehaviour : EnemyBehaviour
 
     public override IEnumerator Attack()
     {
-        Debug.Log("Shooting Arrow!");
+        Debug.Log("RangeEnemy attacking...");
         isAttacking = true;
+        
+        yield return new WaitForSeconds(1);
 
-        yield return new WaitForSeconds(2);
-
-        attackArea.enabled = true;
-
-        yield return null;
-        yield return null;
-        yield return null;
-
+        Instantiate(projectile, transform.position + transform.forward + (Vector3.up * 1.5f), transform.rotation);
+        
         isAttacking = false;
     }
 }
