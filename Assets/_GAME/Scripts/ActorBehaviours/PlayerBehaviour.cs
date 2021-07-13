@@ -18,12 +18,12 @@ public class PlayerBehaviour : BaseEntity
     {
         if (Input.GetMouseButton(0))
         {
-            SetDestinationToMousePosition();
+            SetDestinationToMousePosition(Input.mousePosition);
         }
 
         if (Input.GetKeyDown(KeyCode.Q))
         {
-            LightningAttack();
+            LightningAttack(Input.mousePosition);
         }
 
         if (destinationIndicator && hasReachedDestination())
@@ -42,10 +42,10 @@ public class PlayerBehaviour : BaseEntity
         return true;
     }
     
-    void SetDestinationToMousePosition()
+    public void SetDestinationToMousePosition(Vector3 mousePosition)
     {
         RaycastHit hit;
-        Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+        Ray ray = Camera.main.ScreenPointToRay(mousePosition);
         if (Physics.Raycast(ray, out hit, 1000f, navigationLayer))
         {
             if (agent.SetDestination(hit.point))
@@ -53,17 +53,13 @@ public class PlayerBehaviour : BaseEntity
                 destinationIndicator.transform.position = hit.point;
                 destinationIndicator.SetActive(true);
             }
-            else
-            {
-                Debug.Log("We here?");
-            }
         }
     }
 
-    void LightningAttack()
+    public void LightningAttack(Vector3 mousePosition)
     {
         RaycastHit hit;
-        Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+        Ray ray = Camera.main.ScreenPointToRay(mousePosition);
         if (Physics.Raycast(ray, out hit, 1000f, navigationLayer))
         {
             GameObject lightning = Instantiate(lightningAttack, hit.point, Quaternion.identity);
