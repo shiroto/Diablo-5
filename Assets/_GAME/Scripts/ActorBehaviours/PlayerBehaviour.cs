@@ -53,6 +53,10 @@ public class PlayerBehaviour : BaseEntity
                 destinationIndicator.transform.position = hit.point;
                 destinationIndicator.SetActive(true);
             }
+            else
+            {
+                Debug.Log("We here?");
+            }
         }
     }
 
