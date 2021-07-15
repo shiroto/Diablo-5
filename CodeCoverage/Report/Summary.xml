@@ -1,21 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
 <CoverageReport scope="Summary">
   <Summary>
-    <Generatedon>13.07.2021 - 17:22:41</Generatedon>
+    <Generatedon>7/15/2021 - 3:56:24 PM</Generatedon>
     <Parser>OpenCoverParser</Parser>
-    <Assemblies>6</Assemblies>
-    <Classes>158</Classes>
-    <Files>132</Files>
-    <Coveredlines>77</Coveredlines>
-    <Uncoveredlines>9806</Uncoveredlines>
-    <Coverablelines>9883</Coverablelines>
-    <Totallines>21912</Totallines>
-    <Linecoverage>0.7</Linecoverage>
+    <Assemblies>4</Assemblies>
+    <Classes>49</Classes>
+    <Files>49</Files>
+    <Coveredlines>175</Coveredlines>
+    <Uncoveredlines>2726</Uncoveredlines>
+    <Coverablelines>2901</Coverablelines>
+    <Totallines>5640</Totallines>
+    <Linecoverage>6</Linecoverage>
     <Coveredbranches>0</Coveredbranches>
     <Totalbranches>0</Totalbranches>
   </Summary>
   <Coverage>
-    <Assembly name="Assembly-CSharp" classes="13" coverage="0" coveredlines="0" coverablelines="975" totallines="1892" branchcoverage="" coveredbranches="0" totalbranches="0">
+    <Assembly name="Assembly-CSharp" classes="16" coverage="0" coveredlines="0" coverablelines="1111" totallines="2106" branchcoverage="" coveredbranches="0" totalbranches="0">
+      <Class name="AdjustTimeScale" coverage="0" coveredlines="0" coverablelines="33" totallines="53" branchcoverage="" coveredbranches="0" totalbranches="0" />
       <Class name="FAE.CliffAppearance" coverage="0" coveredlines="0" coverablelines="75" totallines="144" branchcoverage="" coveredbranches="0" totalbranches="0" />
       <Class name="FAE.FoliageBender" coverage="0" coveredlines="0" coverablelines="7" totallines="33" branchcoverage="" coveredbranches="0" totalbranches="0" />
       <Class name="FAE.PigmentMapGenerator" coverage="0" coveredlines="0" coverablelines="306" totallines="659" branchcoverage="" coveredbranches="0" totalbranches="0" />
@@ -24,13 +25,15 @@
       <Class name="Flythrough" coverage="0" coveredlines="0" coverablelines="68" totallines="100" branchcoverage="" coveredbranches="0" totalbranches="0" />
       <Class name="FPSDisplay" coverage="0" coveredlines="0" coverablelines="16" totallines="28" branchcoverage="" coveredbranches="0" totalbranches="0" />
       <Class name="LevelSelect" coverage="0" coveredlines="0" coverablelines="37" totallines="79" branchcoverage="" coveredbranches="0" totalbranches="0" />
-      <Class name="LightningAttackAreaBehaviour" coverage="0" coveredlines="0" coverablelines="7" totallines="20" branchcoverage="" coveredbranches="0" totalbranches="0" />
       <Class name="LowPolyMedievalCastlePack.PropellerSpin" coverage="0" coveredlines="0" coverablelines="4" totallines="20" branchcoverage="" coveredbranches="0" totalbranches="0" />
       <Class name="MenuButton" coverage="0" coveredlines="0" coverablelines="55" totallines="87" branchcoverage="" coveredbranches="0" totalbranches="0" />
+      <Class name="ProximityActivate" coverage="0" coveredlines="0" coverablelines="57" totallines="84" branchcoverage="" coveredbranches="0" totalbranches="0" />
+      <Class name="RampAsset" coverage="0" coveredlines="0" coverablelines="4" totallines="13" branchcoverage="" coveredbranches="0" totalbranches="0" />
+      <Class name="SimpleCharacterMotor" coverage="0" coveredlines="0" coverablelines="43" totallines="76" branchcoverage="" coveredbranches="0" totalbranches="0" />
       <Class name="SmoothMouseLook" coverage="0" coveredlines="0" coverablelines="104" totallines="147" branchcoverage="" coveredbranches="0" totalbranches="0" />
-      <Class name="UnityTemplateProjects.SimpleCameraController" coverage="0" coveredlines="0" coverablelines="89" totallines="152" branchcoverage="" coveredbranches="0" totalbranches="0" />
+      <Class name="UnityTemplateProjects.SimpleCameraController" coverage="0" coveredlines="0" coverablelines="95" totallines="160" branchcoverage="" coveredbranches="0" totalbranches="0" />
     </Assembly>
-    <Assembly name="Assembly-CSharp-Editor" classes="10" coverage="0.2" coveredlines="3" coverablelines="1298" totallines="2534" branchcoverage="" coveredbranches="0" totalbranches="0">
+    <Assembly name="Assembly-CSharp-Editor" classes="12" coverage="0.2" coveredlines="3" coverablelines="1417" totallines="2725" branchcoverage="" coveredbranches="0" totalbranches="0">
       <Class name="FAE.CliffAppearanceInspector" coverage="0" coveredlines="0" coverablelines="103" totallines="202" branchcoverage="" coveredbranches="0" totalbranches="0" />
       <Class name="FAE.FAE_Core" coverage="1.6" coveredlines="3" coverablelines="182" totallines="375" branchcoverage="" coveredbranches="0" totalbranches="0" />
       <Class name="FAE.FoliageShaderGUI" coverage="0" coveredlines="0" coverablelines="120" totallines="230" branchcoverage="" coveredbranches="0" totalbranches="0" />
@@ -41,149 +44,33 @@
       <Class name="FAE.TreeBranchShaderGUI" coverage="0" coveredlines="0" coverablelines="113" totallines="229" branchcoverage="" coveredbranches="0" totalbranches="0" />
       <Class name="FAE.TreeTrunkShaderGUI" coverage="0" coveredlines="0" coverablelines="58" totallines="132" branchcoverage="" coveredbranches="0" totalbranches="0" />
       <Class name="FAE.WindControllerInspector" coverage="0" coveredlines="0" coverablelines="78" totallines="150" branchcoverage="" coveredbranches="0" totalbranches="0" />
+      <Class name="RampAssetEditor" coverage="0" coveredlines="0" coverablelines="21" totallines="33" branchcoverage="" coveredbranches="0" totalbranches="0" />
+      <Class name="ReadmeEditor" coverage="0" coveredlines="0" coverablelines="98" totallines="158" branchcoverage="" coveredbranches="0" totalbranches="0" />
     </Assembly>
-    <Assembly name="Game" classes="16" coverage="18.3" coveredlines="56" coverablelines="305" totallines="653" branchcoverage="" coveredbranches="0" totalbranches="0">
+    <Assembly name="Game" classes="18" coverage="39" coveredlines="129" coverablelines="330" totallines="709" branchcoverage="" coveredbranches="0" totalbranches="0">
       <Class name="ArrowAttack" coverage="0" coveredlines="0" coverablelines="4" totallines="12" branchcoverage="" coveredbranches="0" totalbranches="0" />
       <Class name="ArrowBehaviour" coverage="0" coveredlines="0" coverablelines="17" totallines="37" branchcoverage="" coveredbranches="0" totalbranches="0" />
-      <Class name="AttackTrigger" coverage="0" coveredlines="0" coverablelines="7" totallines="18" branchcoverage="" coveredbranches="0" totalbranches="0" />
+      <Class name="AttackTrigger" coverage="100" coveredlines="7" coverablelines="7" totallines="18" branchcoverage="" coveredbranches="0" totalbranches="0" />
       <Class name="BaseAttack" coverage="0" coveredlines="0" coverablelines="2" totallines="12" branchcoverage="" coveredbranches="0" totalbranches="0" />
       <Class name="BaseEntity" coverage="25" coveredlines="2" coverablelines="8" totallines="35" branchcoverage="" coveredbranches="0" totalbranches="0" />
       <Class name="CharacterBehaviour" coverage="0" coveredlines="0" coverablelines="3" totallines="27" branchcoverage="" coveredbranches="0" totalbranches="0" />
       <Class name="CollisionAttack" coverage="0" coveredlines="0" coverablelines="4" totallines="12" branchcoverage="" coveredbranches="0" totalbranches="0" />
-      <Class name="DamageBehaviour" coverage="5.8" coveredlines="2" coverablelines="34" totallines="57" branchcoverage="" coveredbranches="0" totalbranches="0" />
+      <Class name="DamageBehaviour" coverage="29.4" coveredlines="10" coverablelines="34" totallines="57" branchcoverage="" coveredbranches="0" totalbranches="0" />
       <Class name="DashActionBehaviour" coverage="0" coveredlines="0" coverablelines="46" totallines="85" branchcoverage="" coveredbranches="0" totalbranches="0" />
-      <Class name="EnemyBehaviour" coverage="0" coveredlines="0" coverablelines="26" totallines="59" branchcoverage="" coveredbranches="0" totalbranches="0" />
+      <Class name="EnemyBehaviour" coverage="100" coveredlines="27" coverablelines="27" totallines="60" branchcoverage="" coveredbranches="0" totalbranches="0" />
+      <Class name="FlamethrowerAttackBehaviour" coverage="0" coveredlines="0" coverablelines="19" totallines="38" branchcoverage="" coveredbranches="0" totalbranches="0" />
       <Class name="JumpActionBehaviour" coverage="0" coveredlines="0" coverablelines="35" totallines="69" branchcoverage="" coveredbranches="0" totalbranches="0" />
-      <Class name="LightningAttack" coverage="66.6" coveredlines="6" coverablelines="9" totallines="24" branchcoverage="" coveredbranches="0" totalbranches="0" />
-      <Class name="MeeleEnemyBehaviour" coverage="0" coveredlines="0" coverablelines="26" totallines="47" branchcoverage="" coveredbranches="0" totalbranches="0" />
-      <Class name="PlayerBehaviour" coverage="83.6" coveredlines="46" coverablelines="55" totallines="91" branchcoverage="" coveredbranches="0" totalbranches="0" />
+      <Class name="LightningAttack" coverage="100" coveredlines="9" coverablelines="9" totallines="24" branchcoverage="" coveredbranches="0" totalbranches="0" />
+      <Class name="LightningAttackAreaBehaviour" coverage="100" coveredlines="7" coverablelines="7" totallines="20" branchcoverage="" coveredbranches="0" totalbranches="0" />
+      <Class name="MeeleEnemyBehaviour" coverage="76.9" coveredlines="20" coverablelines="26" totallines="47" branchcoverage="" coveredbranches="0" totalbranches="0" />
+      <Class name="PlayerBehaviour" coverage="88.6" coveredlines="47" coverablelines="53" totallines="88" branchcoverage="" coveredbranches="0" totalbranches="0" />
       <Class name="RangeEnemyBehaviour" coverage="0" coveredlines="0" coverablelines="20" totallines="37" branchcoverage="" coveredbranches="0" totalbranches="0" />
       <Class name="Stuff" coverage="0" coveredlines="0" coverablelines="9" totallines="31" branchcoverage="" coveredbranches="0" totalbranches="0" />
     </Assembly>
-    <Assembly name="Tests" classes="3" coverage="34.8" coveredlines="15" coverablelines="43" totallines="100" branchcoverage="" coveredbranches="0" totalbranches="0">
-      <Class name="LighningAttackTest" coverage="0" coveredlines="0" coverablelines="16" totallines="28" branchcoverage="" coveredbranches="0" totalbranches="0" />
-      <Class name="MeleeEnemyAnimationTest" coverage="0" coveredlines="0" coverablelines="12" totallines="33" branchcoverage="" coveredbranches="0" totalbranches="0" />
+    <Assembly name="Tests" classes="3" coverage="100" coveredlines="43" coverablelines="43" totallines="100" branchcoverage="" coveredbranches="0" totalbranches="0">
+      <Class name="LighningAttackTest" coverage="100" coveredlines="16" coverablelines="16" totallines="28" branchcoverage="" coveredbranches="0" totalbranches="0" />
+      <Class name="MeleeEnemyAnimationTest" coverage="100" coveredlines="12" coverablelines="12" totallines="33" branchcoverage="" coveredbranches="0" totalbranches="0" />
       <Class name="PlayerBehaviourTest" coverage="100" coveredlines="15" coverablelines="15" totallines="39" branchcoverage="" coveredbranches="0" totalbranches="0" />
-    </Assembly>
-    <Assembly name="Unity.Postprocessing.Editor" classes="40" coverage="0.1" coveredlines="3" coverablelines="2717" totallines="5762" branchcoverage="" coveredbranches="0" totalbranches="0">
-      <Class name="UnityEditor.Experimental.Rendering.PostProcessShaderIncludePath" coverage="0" coveredlines="0" coverablelines="12" totallines="26" branchcoverage="" coveredbranches="0" totalbranches="0" />
-      <Class name="UnityEditor.Rendering.PostProcessing.AmbientOcclusionEditor" coverage="0" coveredlines="0" coverablelines="36" totallines="74" branchcoverage="" coveredbranches="0" totalbranches="0" />
-      <Class name="UnityEditor.Rendering.PostProcessing.AttributeDecorator" coverage="0" coveredlines="0" coverablelines="3" totallines="35" branchcoverage="" coveredbranches="0" totalbranches="0" />
-      <Class name="UnityEditor.Rendering.PostProcessing.AutoExposureEditor" coverage="0" coveredlines="0" coverablelines="30" totallines="63" branchcoverage="" coveredbranches="0" totalbranches="0" />
-      <Class name="UnityEditor.Rendering.PostProcessing.BaseEditor[T]" coverage="0" coveredlines="0" coverablelines="4" totallines="59" branchcoverage="" coveredbranches="0" totalbranches="0" />
-      <Class name="UnityEditor.Rendering.PostProcessing.BloomEditor" coverage="0" coveredlines="0" coverablelines="34" totallines="65" branchcoverage="" coveredbranches="0" totalbranches="0" />
-      <Class name="UnityEditor.Rendering.PostProcessing.ChromaticAberrationEditor" coverage="0" coveredlines="0" coverablelines="13" totallines="31" branchcoverage="" coveredbranches="0" totalbranches="0" />
-      <Class name="UnityEditor.Rendering.PostProcessing.ColorGradingEditor" coverage="0" coveredlines="0" coverablelines="479" totallines="746" branchcoverage="" coveredbranches="0" totalbranches="0" />
-      <Class name="UnityEditor.Rendering.PostProcessing.ColorUsageDecorator" coverage="0" coveredlines="0" coverablelines="7" totallines="143" branchcoverage="" coveredbranches="0" totalbranches="0" />
-      <Class name="UnityEditor.Rendering.PostProcessing.CubeLutAssetFactory" coverage="0" coveredlines="0" coverablelines="28" totallines="58" branchcoverage="" coveredbranches="0" totalbranches="0" />
-      <Class name="UnityEditor.Rendering.PostProcessing.CubeLutAssetImporter" coverage="2.4" coveredlines="3" coverablelines="125" totallines="218" branchcoverage="" coveredbranches="0" totalbranches="0" />
-      <Class name="UnityEditor.Rendering.PostProcessing.CurveEditor" coverage="0" coveredlines="0" coverablelines="527" totallines="859" branchcoverage="" coveredbranches="0" totalbranches="0" />
-      <Class name="UnityEditor.Rendering.PostProcessing.DecoratorAttribute" coverage="0" coveredlines="0" coverablelines="4" totallines="27" branchcoverage="" coveredbranches="0" totalbranches="0" />
-      <Class name="UnityEditor.Rendering.PostProcessing.DefaultPostProcessEffectEditor" coverage="0" coveredlines="0" coverablelines="17" totallines="47" branchcoverage="" coveredbranches="0" totalbranches="0" />
-      <Class name="UnityEditor.Rendering.PostProcessing.DefineSetter" coverage="0" coveredlines="0" coverablelines="20" totallines="45" branchcoverage="" coveredbranches="0" totalbranches="0" />
-      <Class name="UnityEditor.Rendering.PostProcessing.DepthOfFieldEditor" coverage="0" coveredlines="0" coverablelines="14" totallines="33" branchcoverage="" coveredbranches="0" totalbranches="0" />
-      <Class name="UnityEditor.Rendering.PostProcessing.DoCreatePostProcessProfile" coverage="0" coveredlines="0" coverablelines="4" totallines="82" branchcoverage="" coveredbranches="0" totalbranches="0" />
-      <Class name="UnityEditor.Rendering.PostProcessing.EditorUtilities" coverage="0" coveredlines="0" coverablelines="175" totallines="354" branchcoverage="" coveredbranches="0" totalbranches="0" />
-      <Class name="UnityEditor.Rendering.PostProcessing.EffectListEditor" coverage="0" coveredlines="0" coverablelines="173" totallines="346" branchcoverage="" coveredbranches="0" totalbranches="0" />
-      <Class name="UnityEditor.Rendering.PostProcessing.GlobalSettings" coverage="0" coveredlines="0" coverablelines="53" totallines="114" branchcoverage="" coveredbranches="0" totalbranches="0" />
-      <Class name="UnityEditor.Rendering.PostProcessing.LensDistortionEditor" coverage="0" coveredlines="0" coverablelines="5" totallines="16" branchcoverage="" coveredbranches="0" totalbranches="0" />
-      <Class name="UnityEditor.Rendering.PostProcessing.MaxDecorator" coverage="0" coveredlines="0" coverablelines="14" totallines="143" branchcoverage="" coveredbranches="0" totalbranches="0" />
-      <Class name="UnityEditor.Rendering.PostProcessing.MinDecorator" coverage="0" coveredlines="0" coverablelines="14" totallines="143" branchcoverage="" coveredbranches="0" totalbranches="0" />
-      <Class name="UnityEditor.Rendering.PostProcessing.MinMaxDecorator" coverage="0" coveredlines="0" coverablelines="20" totallines="143" branchcoverage="" coveredbranches="0" totalbranches="0" />
-      <Class name="UnityEditor.Rendering.PostProcessing.PostProcessDebugEditor" coverage="0" coveredlines="0" coverablelines="84" totallines="144" branchcoverage="" coveredbranches="0" totalbranches="0" />
-      <Class name="UnityEditor.Rendering.PostProcessing.PostProcessEditorAttribute" coverage="0" coveredlines="0" coverablelines="4" totallines="28" branchcoverage="" coveredbranches="0" totalbranches="0" />
-      <Class name="UnityEditor.Rendering.PostProcessing.PostProcessEffectBaseEditor" coverage="0" coveredlines="0" coverablelines="119" totallines="216" branchcoverage="" coveredbranches="0" totalbranches="0" />
-      <Class name="UnityEditor.Rendering.PostProcessing.PostProcessEffectEditor[T]" coverage="0" coveredlines="0" coverablelines="8" totallines="88" branchcoverage="" coveredbranches="0" totalbranches="0" />
-      <Class name="UnityEditor.Rendering.PostProcessing.PostProcessLayerEditor" coverage="0" coveredlines="0" coverablelines="257" totallines="422" branchcoverage="" coveredbranches="0" totalbranches="0" />
-      <Class name="UnityEditor.Rendering.PostProcessing.PostProcessProfileEditor" coverage="0" coveredlines="0" coverablelines="13" totallines="29" branchcoverage="" coveredbranches="0" totalbranches="0" />
-      <Class name="UnityEditor.Rendering.PostProcessing.PostProcessVolumeEditor" coverage="0" coveredlines="0" coverablelines="102" totallines="166" branchcoverage="" coveredbranches="0" totalbranches="0" />
-      <Class name="UnityEditor.Rendering.PostProcessing.ProfileFactory" coverage="0" coveredlines="0" coverablelines="33" totallines="82" branchcoverage="" coveredbranches="0" totalbranches="0" />
-      <Class name="UnityEditor.Rendering.PostProcessing.RangeDecorator" coverage="0" coveredlines="0" coverablelines="12" totallines="143" branchcoverage="" coveredbranches="0" totalbranches="0" />
-      <Class name="UnityEditor.Rendering.PostProcessing.ResourceAssetFactory" coverage="0" coveredlines="0" coverablelines="6" totallines="19" branchcoverage="" coveredbranches="0" totalbranches="0" />
-      <Class name="UnityEditor.Rendering.PostProcessing.ScreenSpaceReflectionsEditor" coverage="0" coveredlines="0" coverablelines="30" totallines="58" branchcoverage="" coveredbranches="0" totalbranches="0" />
-      <Class name="UnityEditor.Rendering.PostProcessing.SerializedParameterOverride" coverage="0" coveredlines="0" coverablelines="17" totallines="62" branchcoverage="" coveredbranches="0" totalbranches="0" />
-      <Class name="UnityEditor.Rendering.PostProcessing.Styling" coverage="0" coveredlines="0" coverablelines="23" totallines="114" branchcoverage="" coveredbranches="0" totalbranches="0" />
-      <Class name="UnityEditor.Rendering.PostProcessing.TrackballDecorator" coverage="0" coveredlines="0" coverablelines="141" totallines="209" branchcoverage="" coveredbranches="0" totalbranches="0" />
-      <Class name="UnityEditor.Rendering.PostProcessing.VignetteEditor" coverage="0" coveredlines="0" coverablelines="48" totallines="91" branchcoverage="" coveredbranches="0" totalbranches="0" />
-      <Class name="UnityEditor.Rendering.PostProcessing.VolumeFactory" coverage="0" coveredlines="0" coverablelines="9" totallines="21" branchcoverage="" coveredbranches="0" totalbranches="0" />
-    </Assembly>
-    <Assembly name="Unity.Postprocessing.Runtime" classes="76" coverage="0" coveredlines="0" coverablelines="4545" totallines="19224" branchcoverage="" coveredbranches="0" totalbranches="0">
-      <Class name="UnityEngine.Rendering.PostProcessing.AmbientOcclusion" coverage="0" coveredlines="0" coverablelines="31" totallines="268" branchcoverage="" coveredbranches="0" totalbranches="0" />
-      <Class name="UnityEngine.Rendering.PostProcessing.AmbientOcclusionRenderer" coverage="0" coveredlines="0" coverablelines="28" totallines="268" branchcoverage="" coveredbranches="0" totalbranches="0" />
-      <Class name="UnityEngine.Rendering.PostProcessing.AutoExposure" coverage="0" coveredlines="0" coverablelines="10" totallines="199" branchcoverage="" coveredbranches="0" totalbranches="0" />
-      <Class name="UnityEngine.Rendering.PostProcessing.AutoExposureRenderer" coverage="0" coveredlines="0" coverablelines="70" totallines="199" branchcoverage="" coveredbranches="0" totalbranches="0" />
-      <Class name="UnityEngine.Rendering.PostProcessing.Bloom" coverage="0" coveredlines="0" coverablelines="13" totallines="272" branchcoverage="" coveredbranches="0" totalbranches="0" />
-      <Class name="UnityEngine.Rendering.PostProcessing.BloomRenderer" coverage="0" coveredlines="0" coverablelines="100" totallines="272" branchcoverage="" coveredbranches="0" totalbranches="0" />
-      <Class name="UnityEngine.Rendering.PostProcessing.ChromaticAberration" coverage="0" coveredlines="0" coverablelines="6" totallines="94" branchcoverage="" coveredbranches="0" totalbranches="0" />
-      <Class name="UnityEngine.Rendering.PostProcessing.ChromaticAberrationRenderer" coverage="0" coveredlines="0" coverablelines="22" totallines="94" branchcoverage="" coveredbranches="0" totalbranches="0" />
-      <Class name="UnityEngine.Rendering.PostProcessing.ColorGrading" coverage="0" coveredlines="0" coverablelines="47" totallines="840" branchcoverage="" coveredbranches="0" totalbranches="0" />
-      <Class name="UnityEngine.Rendering.PostProcessing.ColorGradingRenderer" coverage="0" coveredlines="0" coverablelines="265" totallines="840" branchcoverage="" coveredbranches="0" totalbranches="0" />
-      <Class name="UnityEngine.Rendering.PostProcessing.ColorParameter" coverage="0" coveredlines="0" coverablelines="9" totallines="534" branchcoverage="" coveredbranches="0" totalbranches="0" />
-      <Class name="UnityEngine.Rendering.PostProcessing.ColorUtilities" coverage="0" coveredlines="0" coverablelines="54" totallines="182" branchcoverage="" coveredbranches="0" totalbranches="0" />
-      <Class name="UnityEngine.Rendering.PostProcessing.DepthOfField" coverage="0" coveredlines="0" coverablelines="7" totallines="263" branchcoverage="" coveredbranches="0" totalbranches="0" />
-      <Class name="UnityEngine.Rendering.PostProcessing.DepthOfFieldRenderer" coverage="0" coveredlines="0" coverablelines="98" totallines="263" branchcoverage="" coveredbranches="0" totalbranches="0" />
-      <Class name="UnityEngine.Rendering.PostProcessing.DisplayNameAttribute" coverage="0" coveredlines="0" coverablelines="4" totallines="25" branchcoverage="" coveredbranches="0" totalbranches="0" />
-      <Class name="UnityEngine.Rendering.PostProcessing.Dithering" coverage="0" coveredlines="0" coverablelines="13" totallines="43" branchcoverage="" coveredbranches="0" totalbranches="0" />
-      <Class name="UnityEngine.Rendering.PostProcessing.FastApproximateAntialiasing" coverage="0" coveredlines="0" coverablelines="2" totallines="30" branchcoverage="" coveredbranches="0" totalbranches="0" />
-      <Class name="UnityEngine.Rendering.PostProcessing.FloatParameter" coverage="0" coveredlines="0" coverablelines="3" totallines="534" branchcoverage="" coveredbranches="0" totalbranches="0" />
-      <Class name="UnityEngine.Rendering.PostProcessing.Fog" coverage="0" coveredlines="0" coverablelines="17" totallines="55" branchcoverage="" coveredbranches="0" totalbranches="0" />
-      <Class name="UnityEngine.Rendering.PostProcessing.Grain" coverage="0" coveredlines="0" coverablelines="7" totallines="125" branchcoverage="" coveredbranches="0" totalbranches="0" />
-      <Class name="UnityEngine.Rendering.PostProcessing.GrainRenderer" coverage="0" coveredlines="0" coverablelines="35" totallines="125" branchcoverage="" coveredbranches="0" totalbranches="0" />
-      <Class name="UnityEngine.Rendering.PostProcessing.HableCurve" coverage="0" coveredlines="0" coverablelines="162" totallines="394" branchcoverage="" coveredbranches="0" totalbranches="0" />
-      <Class name="UnityEngine.Rendering.PostProcessing.HaltonSeq" coverage="0" coveredlines="0" coverablelines="11" totallines="30" branchcoverage="" coveredbranches="0" totalbranches="0" />
-      <Class name="UnityEngine.Rendering.PostProcessing.HistogramMonitor" coverage="0" coveredlines="0" coverablelines="37" totallines="120" branchcoverage="" coveredbranches="0" totalbranches="0" />
-      <Class name="UnityEngine.Rendering.PostProcessing.IntParameter" coverage="0" coveredlines="0" coverablelines="3" totallines="534" branchcoverage="" coveredbranches="0" totalbranches="0" />
-      <Class name="UnityEngine.Rendering.PostProcessing.LensDistortion" coverage="0" coveredlines="0" coverablelines="9" totallines="80" branchcoverage="" coveredbranches="0" totalbranches="0" />
-      <Class name="UnityEngine.Rendering.PostProcessing.LensDistortionRenderer" coverage="0" coveredlines="0" coverablelines="11" totallines="80" branchcoverage="" coveredbranches="0" totalbranches="0" />
-      <Class name="UnityEngine.Rendering.PostProcessing.LightMeterMonitor" coverage="0" coveredlines="0" coverablelines="37" totallines="83" branchcoverage="" coveredbranches="0" totalbranches="0" />
-      <Class name="UnityEngine.Rendering.PostProcessing.LogHistogram" coverage="0" coveredlines="0" coverablelines="31" totallines="62" branchcoverage="" coveredbranches="0" totalbranches="0" />
-      <Class name="UnityEngine.Rendering.PostProcessing.MaxAttribute" coverage="0" coveredlines="0" coverablelines="4" totallines="25" branchcoverage="" coveredbranches="0" totalbranches="0" />
-      <Class name="UnityEngine.Rendering.PostProcessing.MeshUtilities" coverage="0" coveredlines="0" coverablelines="25" totallines="58" branchcoverage="" coveredbranches="0" totalbranches="0" />
-      <Class name="UnityEngine.Rendering.PostProcessing.MinAttribute" coverage="0" coveredlines="0" coverablelines="4" totallines="25" branchcoverage="" coveredbranches="0" totalbranches="0" />
-      <Class name="UnityEngine.Rendering.PostProcessing.MinMaxAttribute" coverage="0" coveredlines="0" coverablelines="5" totallines="32" branchcoverage="" coveredbranches="0" totalbranches="0" />
-      <Class name="UnityEngine.Rendering.PostProcessing.Monitor" coverage="0" coveredlines="0" coverablelines="20" totallines="58" branchcoverage="" coveredbranches="0" totalbranches="0" />
-      <Class name="UnityEngine.Rendering.PostProcessing.MotionBlur" coverage="0" coveredlines="0" coverablelines="5" totallines="148" branchcoverage="" coveredbranches="0" totalbranches="0" />
-      <Class name="UnityEngine.Rendering.PostProcessing.MotionBlurRenderer" coverage="0" coveredlines="0" coverablelines="53" totallines="148" branchcoverage="" coveredbranches="0" totalbranches="0" />
-      <Class name="UnityEngine.Rendering.PostProcessing.MultiScaleVO" coverage="0" coveredlines="0" coverablelines="284" totallines="565" branchcoverage="" coveredbranches="0" totalbranches="0" />
-      <Class name="UnityEngine.Rendering.PostProcessing.ParameterOverride" coverage="0" coveredlines="0" coverablelines="7" totallines="534" branchcoverage="" coveredbranches="0" totalbranches="0" />
-      <Class name="UnityEngine.Rendering.PostProcessing.ParameterOverride[T]" coverage="0" coveredlines="0" coverablelines="34" totallines="534" branchcoverage="" coveredbranches="0" totalbranches="0" />
-      <Class name="UnityEngine.Rendering.PostProcessing.PostProcessAttribute" coverage="0" coveredlines="0" coverablelines="15" totallines="60" branchcoverage="" coveredbranches="0" totalbranches="0" />
-      <Class name="UnityEngine.Rendering.PostProcessing.PostProcessBundle" coverage="0" coveredlines="0" coverablelines="34" totallines="66" branchcoverage="" coveredbranches="0" totalbranches="0" />
-      <Class name="UnityEngine.Rendering.PostProcessing.PostProcessDebug" coverage="0" coveredlines="0" coverablelines="63" totallines="159" branchcoverage="" coveredbranches="0" totalbranches="0" />
-      <Class name="UnityEngine.Rendering.PostProcessing.PostProcessDebugLayer" coverage="0" coveredlines="0" coverablelines="125" totallines="364" branchcoverage="" coveredbranches="0" totalbranches="0" />
-      <Class name="UnityEngine.Rendering.PostProcessing.PostProcessEffectRenderer" coverage="0" coveredlines="0" coverablelines="12" totallines="78" branchcoverage="" coveredbranches="0" totalbranches="0" />
-      <Class name="UnityEngine.Rendering.PostProcessing.PostProcessEffectRenderer[T]" coverage="0" coveredlines="0" coverablelines="4" totallines="78" branchcoverage="" coveredbranches="0" totalbranches="0" />
-      <Class name="UnityEngine.Rendering.PostProcessing.PostProcessEffectSettings" coverage="0" coveredlines="0" coverablelines="34" totallines="121" branchcoverage="" coveredbranches="0" totalbranches="0" />
-      <Class name="UnityEngine.Rendering.PostProcessing.PostProcessEventComparer" coverage="0" coveredlines="0" coverablelines="6" totallines="42" branchcoverage="" coveredbranches="0" totalbranches="0" />
-      <Class name="UnityEngine.Rendering.PostProcessing.PostProcessLayer" coverage="0" coveredlines="0" coverablelines="718" totallines="1323" branchcoverage="" coveredbranches="0" totalbranches="0" />
-      <Class name="UnityEngine.Rendering.PostProcessing.PostProcessManager" coverage="0" coveredlines="0" coverablelines="238" totallines="461" branchcoverage="" coveredbranches="0" totalbranches="0" />
-      <Class name="UnityEngine.Rendering.PostProcessing.PostProcessProfile" coverage="0" coveredlines="0" coverablelines="74" totallines="187" branchcoverage="" coveredbranches="0" totalbranches="0" />
-      <Class name="UnityEngine.Rendering.PostProcessing.PostProcessRenderContext" coverage="0" coveredlines="0" coverablelines="137" totallines="431" branchcoverage="" coveredbranches="0" totalbranches="0" />
-      <Class name="UnityEngine.Rendering.PostProcessing.PostProcessResources" coverage="0" coveredlines="0" coverablelines="10" totallines="92" branchcoverage="" coveredbranches="0" totalbranches="0" />
-      <Class name="UnityEngine.Rendering.PostProcessing.PostProcessVolume" coverage="0" coveredlines="0" coverablelines="89" totallines="277" branchcoverage="" coveredbranches="0" totalbranches="0" />
-      <Class name="UnityEngine.Rendering.PostProcessing.PropertySheet" coverage="0" coveredlines="0" coverablelines="20" totallines="58" branchcoverage="" coveredbranches="0" totalbranches="0" />
-      <Class name="UnityEngine.Rendering.PostProcessing.PropertySheetFactory" coverage="0" coveredlines="0" coverablelines="26" totallines="89" branchcoverage="" coveredbranches="0" totalbranches="0" />
-      <Class name="UnityEngine.Rendering.PostProcessing.RuntimeUtilities" coverage="0" coveredlines="0" coverablelines="401" totallines="1246" branchcoverage="" coveredbranches="0" totalbranches="0" />
-      <Class name="UnityEngine.Rendering.PostProcessing.ScalableAO" coverage="0" coveredlines="0" coverablelines="86" totallines="169" branchcoverage="" coveredbranches="0" totalbranches="0" />
-      <Class name="UnityEngine.Rendering.PostProcessing.ScreenSpaceReflections" coverage="0" coveredlines="0" coverablelines="10" totallines="303" branchcoverage="" coveredbranches="0" totalbranches="0" />
-      <Class name="UnityEngine.Rendering.PostProcessing.ScreenSpaceReflectionsRenderer" coverage="0" coveredlines="0" coverablelines="105" totallines="303" branchcoverage="" coveredbranches="0" totalbranches="0" />
-      <Class name="UnityEngine.Rendering.PostProcessing.ShaderIDs" coverage="0" coveredlines="0" coverablelines="130" totallines="159" branchcoverage="" coveredbranches="0" totalbranches="0" />
-      <Class name="UnityEngine.Rendering.PostProcessing.Spline" coverage="0" coveredlines="0" coverablelines="46" totallines="148" branchcoverage="" coveredbranches="0" totalbranches="0" />
-      <Class name="UnityEngine.Rendering.PostProcessing.SplineParameter" coverage="0" coveredlines="0" coverablelines="24" totallines="534" branchcoverage="" coveredbranches="0" totalbranches="0" />
-      <Class name="UnityEngine.Rendering.PostProcessing.SubpixelMorphologicalAntialiasing" coverage="0" coveredlines="0" coverablelines="20" totallines="80" branchcoverage="" coveredbranches="0" totalbranches="0" />
-      <Class name="UnityEngine.Rendering.PostProcessing.TargetPool" coverage="0" coveredlines="0" coverablelines="25" totallines="48" branchcoverage="" coveredbranches="0" totalbranches="0" />
-      <Class name="UnityEngine.Rendering.PostProcessing.TemporalAntialiasing" coverage="0" coveredlines="0" coverablelines="127" totallines="265" branchcoverage="" coveredbranches="0" totalbranches="0" />
-      <Class name="UnityEngine.Rendering.PostProcessing.TextureFormatUtilities" coverage="0" coveredlines="0" coverablelines="54" totallines="173" branchcoverage="" coveredbranches="0" totalbranches="0" />
-      <Class name="UnityEngine.Rendering.PostProcessing.TextureLerper" coverage="0" coveredlines="0" coverablelines="122" totallines="230" branchcoverage="" coveredbranches="0" totalbranches="0" />
-      <Class name="UnityEngine.Rendering.PostProcessing.TextureParameter" coverage="0" coveredlines="0" coverablelines="47" totallines="534" branchcoverage="" coveredbranches="0" totalbranches="0" />
-      <Class name="UnityEngine.Rendering.PostProcessing.TrackballAttribute" coverage="0" coveredlines="0" coverablelines="4" totallines="52" branchcoverage="" coveredbranches="0" totalbranches="0" />
-      <Class name="UnityEngine.Rendering.PostProcessing.Vector2Parameter" coverage="0" coveredlines="0" coverablelines="10" totallines="534" branchcoverage="" coveredbranches="0" totalbranches="0" />
-      <Class name="UnityEngine.Rendering.PostProcessing.Vector3Parameter" coverage="0" coveredlines="0" coverablelines="11" totallines="534" branchcoverage="" coveredbranches="0" totalbranches="0" />
-      <Class name="UnityEngine.Rendering.PostProcessing.Vector4Parameter" coverage="0" coveredlines="0" coverablelines="12" totallines="534" branchcoverage="" coveredbranches="0" totalbranches="0" />
-      <Class name="UnityEngine.Rendering.PostProcessing.VectorscopeMonitor" coverage="0" coveredlines="0" coverablelines="43" totallines="99" branchcoverage="" coveredbranches="0" totalbranches="0" />
-      <Class name="UnityEngine.Rendering.PostProcessing.Vignette" coverage="0" coveredlines="0" coverablelines="12" totallines="123" branchcoverage="" coveredbranches="0" totalbranches="0" />
-      <Class name="UnityEngine.Rendering.PostProcessing.VignetteRenderer" coverage="0" coveredlines="0" coverablelines="17" totallines="123" branchcoverage="" coveredbranches="0" totalbranches="0" />
-      <Class name="UnityEngine.Rendering.PostProcessing.WaveformMonitor" coverage="0" coveredlines="0" coverablelines="51" totallines="112" branchcoverage="" coveredbranches="0" totalbranches="0" />
     </Assembly>
   </Coverage>
 </CoverageReport>
