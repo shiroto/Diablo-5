@@ -202,7 +202,6 @@ GameObject:
   m_Component:
   - component: {fileID: 4935753998257613367}
   - component: {fileID: 2319673246198150629}
-  - component: {fileID: 2104629052}
   - component: {fileID: 8409886223891250401}
   - component: {fileID: 3474688463615535980}
   m_Layer: 9
@@ -254,18 +253,6 @@ MonoBehaviour:
     m_PostInfinity: 2
     m_RotationOrder: 4
   attackArea: {fileID: 6976363569452156545}
---- !u!114 &2104629052
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8828702459716426784}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f83bf836f4a51bf489d9112c3ab7da21, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!54 &8409886223891250401
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -375,7 +362,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Controller
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 9100000, guid: 33a3bfaf66c64f21ac32484b6aa479e5, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ee8ab15e8a37bfc428e740333881df8b, type: 3}
 --- !u!4 &1326804273456075098 stripped
