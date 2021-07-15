@@ -1,21 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <CoverageReport scope="Summary">
   <Summary>
-    <Generatedon>13.07.2021 - 15:59:16</Generatedon>
+    <Generatedon>13.07.2021 - 17:22:41</Generatedon>
     <Parser>OpenCoverParser</Parser>
     <Assemblies>6</Assemblies>
     <Classes>158</Classes>
     <Files>132</Files>
-    <Coveredlines>111</Coveredlines>
-    <Uncoveredlines>9775</Uncoveredlines>
-    <Coverablelines>9886</Coverablelines>
-    <Totallines>21913</Totallines>
-    <Linecoverage>1.1</Linecoverage>
+    <Coveredlines>77</Coveredlines>
+    <Uncoveredlines>9806</Uncoveredlines>
+    <Coverablelines>9883</Coverablelines>
+    <Totallines>21912</Totallines>
+    <Linecoverage>0.7</Linecoverage>
     <Coveredbranches>0</Coveredbranches>
     <Totalbranches>0</Totalbranches>
   </Summary>
   <Coverage>
-    <Assembly name="Assembly-CSharp" classes="13" coverage="0.7" coveredlines="7" coverablelines="975" totallines="1892" branchcoverage="" coveredbranches="0" totalbranches="0">
+    <Assembly name="Assembly-CSharp" classes="13" coverage="0" coveredlines="0" coverablelines="975" totallines="1892" branchcoverage="" coveredbranches="0" totalbranches="0">
       <Class name="FAE.CliffAppearance" coverage="0" coveredlines="0" coverablelines="75" totallines="144" branchcoverage="" coveredbranches="0" totalbranches="0" />
       <Class name="FAE.FoliageBender" coverage="0" coveredlines="0" coverablelines="7" totallines="33" branchcoverage="" coveredbranches="0" totalbranches="0" />
       <Class name="FAE.PigmentMapGenerator" coverage="0" coveredlines="0" coverablelines="306" totallines="659" branchcoverage="" coveredbranches="0" totalbranches="0" />
@@ -24,7 +24,7 @@
       <Class name="Flythrough" coverage="0" coveredlines="0" coverablelines="68" totallines="100" branchcoverage="" coveredbranches="0" totalbranches="0" />
       <Class name="FPSDisplay" coverage="0" coveredlines="0" coverablelines="16" totallines="28" branchcoverage="" coveredbranches="0" totalbranches="0" />
       <Class name="LevelSelect" coverage="0" coveredlines="0" coverablelines="37" totallines="79" branchcoverage="" coveredbranches="0" totalbranches="0" />
-      <Class name="LightningAttackAreaBehaviour" coverage="100" coveredlines="7" coverablelines="7" totallines="20" branchcoverage="" coveredbranches="0" totalbranches="0" />
+      <Class name="LightningAttackAreaBehaviour" coverage="0" coveredlines="0" coverablelines="7" totallines="20" branchcoverage="" coveredbranches="0" totalbranches="0" />
       <Class name="LowPolyMedievalCastlePack.PropellerSpin" coverage="0" coveredlines="0" coverablelines="4" totallines="20" branchcoverage="" coveredbranches="0" totalbranches="0" />
       <Class name="MenuButton" coverage="0" coveredlines="0" coverablelines="55" totallines="87" branchcoverage="" coveredbranches="0" totalbranches="0" />
       <Class name="SmoothMouseLook" coverage="0" coveredlines="0" coverablelines="104" totallines="147" branchcoverage="" coveredbranches="0" totalbranches="0" />
@@ -42,8 +42,7 @@
       <Class name="FAE.TreeTrunkShaderGUI" coverage="0" coveredlines="0" coverablelines="58" totallines="132" branchcoverage="" coveredbranches="0" totalbranches="0" />
       <Class name="FAE.WindControllerInspector" coverage="0" coveredlines="0" coverablelines="78" totallines="150" branchcoverage="" coveredbranches="0" totalbranches="0" />
     </Assembly>
-    <Assembly name="Game" classes="17" coverage="21.6" coveredlines="70" coverablelines="323" totallines="693" branchcoverage="" coveredbranches="0" totalbranches="0">
-      <Class name="ActionBehaviour" coverage="0" coveredlines="0" coverablelines="3" totallines="13" branchcoverage="" coveredbranches="0" totalbranches="0" />
+    <Assembly name="Game" classes="16" coverage="18.3" coveredlines="56" coverablelines="305" totallines="653" branchcoverage="" coveredbranches="0" totalbranches="0">
       <Class name="ArrowAttack" coverage="0" coveredlines="0" coverablelines="4" totallines="12" branchcoverage="" coveredbranches="0" totalbranches="0" />
       <Class name="ArrowBehaviour" coverage="0" coveredlines="0" coverablelines="17" totallines="37" branchcoverage="" coveredbranches="0" totalbranches="0" />
       <Class name="AttackTrigger" coverage="0" coveredlines="0" coverablelines="7" totallines="18" branchcoverage="" coveredbranches="0" totalbranches="0" />
@@ -51,19 +50,20 @@
       <Class name="BaseEntity" coverage="25" coveredlines="2" coverablelines="8" totallines="35" branchcoverage="" coveredbranches="0" totalbranches="0" />
       <Class name="CharacterBehaviour" coverage="0" coveredlines="0" coverablelines="3" totallines="27" branchcoverage="" coveredbranches="0" totalbranches="0" />
       <Class name="CollisionAttack" coverage="0" coveredlines="0" coverablelines="4" totallines="12" branchcoverage="" coveredbranches="0" totalbranches="0" />
-      <Class name="DamageBehaviour" coverage="29.4" coveredlines="10" coverablelines="34" totallines="57" branchcoverage="" coveredbranches="0" totalbranches="0" />
+      <Class name="DamageBehaviour" coverage="5.8" coveredlines="2" coverablelines="34" totallines="57" branchcoverage="" coveredbranches="0" totalbranches="0" />
       <Class name="DashActionBehaviour" coverage="0" coveredlines="0" coverablelines="46" totallines="85" branchcoverage="" coveredbranches="0" totalbranches="0" />
-      <Class name="EnemyBehaviour" coverage="76.9" coveredlines="20" coverablelines="26" totallines="59" branchcoverage="" coveredbranches="0" totalbranches="0" />
+      <Class name="EnemyBehaviour" coverage="0" coveredlines="0" coverablelines="26" totallines="59" branchcoverage="" coveredbranches="0" totalbranches="0" />
       <Class name="JumpActionBehaviour" coverage="0" coveredlines="0" coverablelines="35" totallines="69" branchcoverage="" coveredbranches="0" totalbranches="0" />
-      <Class name="LightningAttack" coverage="100" coveredlines="9" coverablelines="9" totallines="24" branchcoverage="" coveredbranches="0" totalbranches="0" />
-      <Class name="MeeleEnemyBehaviour" coverage="46.1" coveredlines="12" coverablelines="26" totallines="47" branchcoverage="" coveredbranches="0" totalbranches="0" />
-      <Class name="PlayerBehaviour" coverage="30.9" coveredlines="17" coverablelines="55" totallines="91" branchcoverage="" coveredbranches="0" totalbranches="0" />
+      <Class name="LightningAttack" coverage="66.6" coveredlines="6" coverablelines="9" totallines="24" branchcoverage="" coveredbranches="0" totalbranches="0" />
+      <Class name="MeeleEnemyBehaviour" coverage="0" coveredlines="0" coverablelines="26" totallines="47" branchcoverage="" coveredbranches="0" totalbranches="0" />
+      <Class name="PlayerBehaviour" coverage="83.6" coveredlines="46" coverablelines="55" totallines="91" branchcoverage="" coveredbranches="0" totalbranches="0" />
       <Class name="RangeEnemyBehaviour" coverage="0" coveredlines="0" coverablelines="20" totallines="37" branchcoverage="" coveredbranches="0" totalbranches="0" />
-      <Class name="Stuff" coverage="0" coveredlines="0" coverablelines="24" totallines="58" branchcoverage="" coveredbranches="0" totalbranches="0" />
+      <Class name="Stuff" coverage="0" coveredlines="0" coverablelines="9" totallines="31" branchcoverage="" coveredbranches="0" totalbranches="0" />
     </Assembly>
-    <Assembly name="Tests" classes="2" coverage="100" coveredlines="28" coverablelines="28" totallines="61" branchcoverage="" coveredbranches="0" totalbranches="0">
-      <Class name="LighningAttackTest" coverage="100" coveredlines="16" coverablelines="16" totallines="28" branchcoverage="" coveredbranches="0" totalbranches="0" />
-      <Class name="MeleeEnemyAnimationTest" coverage="100" coveredlines="12" coverablelines="12" totallines="33" branchcoverage="" coveredbranches="0" totalbranches="0" />
+    <Assembly name="Tests" classes="3" coverage="34.8" coveredlines="15" coverablelines="43" totallines="100" branchcoverage="" coveredbranches="0" totalbranches="0">
+      <Class name="LighningAttackTest" coverage="0" coveredlines="0" coverablelines="16" totallines="28" branchcoverage="" coveredbranches="0" totalbranches="0" />
+      <Class name="MeleeEnemyAnimationTest" coverage="0" coveredlines="0" coverablelines="12" totallines="33" branchcoverage="" coveredbranches="0" totalbranches="0" />
+      <Class name="PlayerBehaviourTest" coverage="100" coveredlines="15" coverablelines="15" totallines="39" branchcoverage="" coveredbranches="0" totalbranches="0" />
     </Assembly>
     <Assembly name="Unity.Postprocessing.Editor" classes="40" coverage="0.1" coveredlines="3" coverablelines="2717" totallines="5762" branchcoverage="" coveredbranches="0" totalbranches="0">
       <Class name="UnityEditor.Experimental.Rendering.PostProcessShaderIncludePath" coverage="0" coveredlines="0" coverablelines="12" totallines="26" branchcoverage="" coveredbranches="0" totalbranches="0" />

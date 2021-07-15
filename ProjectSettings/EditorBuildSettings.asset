@@ -4,4 +4,14 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/_GAME/Scenes/TestScene.unity
+    guid: 4efaa56b81f73944ab59e34272074553
+  - enabled: 1
+    path: Assets/_GAME/Scenes/LightningAttackTestScene.unity
+    guid: 854639b3e802e4209bfa5ccbfcd8dc2a
+  - enabled: 1
+    path: Assets/_GAME/Scenes/PlayerBehaviourTestScene.unity
+    guid: 17445e1e63fe8d646bc24e7ff9be7380
+  m_configObjects: {}
