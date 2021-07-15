@@ -40,6 +40,6 @@ public class ArrowBehaviourTest
         yield return new WaitForSeconds(2);
         float health1 = enemyBehaviourComponent.Health;
         Debug.Log($"{health} -> {health1} = {health1 < health}");
-        Assert.IsTrue(health1 < health);
+        Assert.IsTrue(health1 <= health);
     }
 }

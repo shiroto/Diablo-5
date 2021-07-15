@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <CoverageReport scope="Summary">
   <Summary>
-    <Generatedon>7/15/2021 - 4:41:35 PM</Generatedon>
+    <Generatedon>7/15/2021 - 4:43:25 PM</Generatedon>
     <Parser>OpenCoverParser</Parser>
     <Assemblies>4</Assemblies>
     <Classes>50</Classes>
     <Files>50</Files>
-    <Coveredlines>190</Coveredlines>
-    <Uncoveredlines>2735</Uncoveredlines>
+    <Coveredlines>70</Coveredlines>
+    <Uncoveredlines>2855</Uncoveredlines>
     <Coverablelines>2925</Coverablelines>
     <Totallines>5676</Totallines>
-    <Linecoverage>6.4</Linecoverage>
+    <Linecoverage>2.3</Linecoverage>
     <Coveredbranches>0</Coveredbranches>
     <Totalbranches>0</Totalbranches>
   </Summary>
@@ -47,31 +47,31 @@
       <Class name="RampAssetEditor" coverage="0" coveredlines="0" coverablelines="21" totallines="33" branchcoverage="" coveredbranches="0" totalbranches="0" />
       <Class name="ReadmeEditor" coverage="0" coveredlines="0" coverablelines="98" totallines="158" branchcoverage="" coveredbranches="0" totalbranches="0" />
     </Assembly>
-    <Assembly name="Game" classes="18" coverage="35.4" coveredlines="115" coverablelines="324" totallines="700" branchcoverage="" coveredbranches="0" totalbranches="0">
+    <Assembly name="Game" classes="18" coverage="15.4" coveredlines="50" coverablelines="324" totallines="700" branchcoverage="" coveredbranches="0" totalbranches="0">
       <Class name="ArrowAttack" coverage="0" coveredlines="0" coverablelines="4" totallines="12" branchcoverage="" coveredbranches="0" totalbranches="0" />
-      <Class name="ArrowBehaviour" coverage="100" coveredlines="11" coverablelines="11" totallines="28" branchcoverage="" coveredbranches="0" totalbranches="0" />
+      <Class name="ArrowBehaviour" coverage="81.8" coveredlines="9" coverablelines="11" totallines="28" branchcoverage="" coveredbranches="0" totalbranches="0" />
       <Class name="AttackTrigger" coverage="57.1" coveredlines="4" coverablelines="7" totallines="18" branchcoverage="" coveredbranches="0" totalbranches="0" />
       <Class name="BaseAttack" coverage="0" coveredlines="0" coverablelines="2" totallines="12" branchcoverage="" coveredbranches="0" totalbranches="0" />
-      <Class name="BaseEntity" coverage="25" coveredlines="2" coverablelines="8" totallines="35" branchcoverage="" coveredbranches="0" totalbranches="0" />
+      <Class name="BaseEntity" coverage="12.5" coveredlines="1" coverablelines="8" totallines="35" branchcoverage="" coveredbranches="0" totalbranches="0" />
       <Class name="CharacterBehaviour" coverage="0" coveredlines="0" coverablelines="3" totallines="27" branchcoverage="" coveredbranches="0" totalbranches="0" />
       <Class name="CollisionAttack" coverage="0" coveredlines="0" coverablelines="4" totallines="12" branchcoverage="" coveredbranches="0" totalbranches="0" />
       <Class name="DamageBehaviour" coverage="5.8" coveredlines="2" coverablelines="34" totallines="57" branchcoverage="" coveredbranches="0" totalbranches="0" />
       <Class name="DashActionBehaviour" coverage="0" coveredlines="0" coverablelines="46" totallines="85" branchcoverage="" coveredbranches="0" totalbranches="0" />
-      <Class name="EnemyBehaviour" coverage="77.7" coveredlines="21" coverablelines="27" totallines="60" branchcoverage="" coveredbranches="0" totalbranches="0" />
+      <Class name="EnemyBehaviour" coverage="51.8" coveredlines="14" coverablelines="27" totallines="60" branchcoverage="" coveredbranches="0" totalbranches="0" />
       <Class name="FlamethrowerAttackBehaviour" coverage="0" coveredlines="0" coverablelines="19" totallines="38" branchcoverage="" coveredbranches="0" totalbranches="0" />
       <Class name="JumpActionBehaviour" coverage="0" coveredlines="0" coverablelines="35" totallines="69" branchcoverage="" coveredbranches="0" totalbranches="0" />
-      <Class name="LightningAttack" coverage="100" coveredlines="9" coverablelines="9" totallines="24" branchcoverage="" coveredbranches="0" totalbranches="0" />
-      <Class name="LightningAttackAreaBehaviour" coverage="100" coveredlines="7" coverablelines="7" totallines="20" branchcoverage="" coveredbranches="0" totalbranches="0" />
+      <Class name="LightningAttack" coverage="0" coveredlines="0" coverablelines="9" totallines="24" branchcoverage="" coveredbranches="0" totalbranches="0" />
+      <Class name="LightningAttackAreaBehaviour" coverage="0" coveredlines="0" coverablelines="7" totallines="20" branchcoverage="" coveredbranches="0" totalbranches="0" />
       <Class name="MeeleEnemyBehaviour" coverage="46.1" coveredlines="12" coverablelines="26" totallines="47" branchcoverage="" coveredbranches="0" totalbranches="0" />
-      <Class name="PlayerBehaviour" coverage="88.6" coveredlines="47" coverablelines="53" totallines="88" branchcoverage="" coveredbranches="0" totalbranches="0" />
+      <Class name="PlayerBehaviour" coverage="15" coveredlines="8" coverablelines="53" totallines="88" branchcoverage="" coveredbranches="0" totalbranches="0" />
       <Class name="RangeEnemyBehaviour" coverage="0" coveredlines="0" coverablelines="20" totallines="37" branchcoverage="" coveredbranches="0" totalbranches="0" />
       <Class name="Stuff" coverage="0" coveredlines="0" coverablelines="9" totallines="31" branchcoverage="" coveredbranches="0" totalbranches="0" />
     </Assembly>
-    <Assembly name="Tests" classes="4" coverage="98.6" coveredlines="72" coverablelines="73" totallines="145" branchcoverage="" coveredbranches="0" totalbranches="0">
-      <Class name="ArrowBehaviourTest" coverage="96.6" coveredlines="29" coverablelines="30" totallines="45" branchcoverage="" coveredbranches="0" totalbranches="0" />
-      <Class name="LighningAttackTest" coverage="100" coveredlines="16" coverablelines="16" totallines="28" branchcoverage="" coveredbranches="0" totalbranches="0" />
-      <Class name="MeleeEnemyAnimationTest" coverage="100" coveredlines="12" coverablelines="12" totallines="33" branchcoverage="" coveredbranches="0" totalbranches="0" />
-      <Class name="PlayerBehaviourTest" coverage="100" coveredlines="15" coverablelines="15" totallines="39" branchcoverage="" coveredbranches="0" totalbranches="0" />
+    <Assembly name="Tests" classes="4" coverage="23.2" coveredlines="17" coverablelines="73" totallines="145" branchcoverage="" coveredbranches="0" totalbranches="0">
+      <Class name="ArrowBehaviourTest" coverage="56.6" coveredlines="17" coverablelines="30" totallines="45" branchcoverage="" coveredbranches="0" totalbranches="0" />
+      <Class name="LighningAttackTest" coverage="0" coveredlines="0" coverablelines="16" totallines="28" branchcoverage="" coveredbranches="0" totalbranches="0" />
+      <Class name="MeleeEnemyAnimationTest" coverage="0" coveredlines="0" coverablelines="12" totallines="33" branchcoverage="" coveredbranches="0" totalbranches="0" />
+      <Class name="PlayerBehaviourTest" coverage="0" coveredlines="0" coverablelines="15" totallines="39" branchcoverage="" coveredbranches="0" totalbranches="0" />
     </Assembly>
   </Coverage>
 </CoverageReport>
