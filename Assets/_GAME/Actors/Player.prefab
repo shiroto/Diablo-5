@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 4228291253619951468}
   - component: {fileID: 1702290595}
   - component: {fileID: 8585728239093746538}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Player
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -56,6 +56,7 @@ MonoBehaviour:
     m_Bits: 256
   agent: {fileID: 1702290595}
   destinationIndicator: {fileID: 0}
+  lightningAttack: {fileID: 0}
 --- !u!136 &4228291253619951468
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -116,7 +117,7 @@ GameObject:
   - component: {fileID: 220503753215351534}
   - component: {fileID: 7723650571876812969}
   - component: {fileID: 8724953500638145245}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Cylinder
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -197,7 +198,7 @@ GameObject:
   - component: {fileID: 7835200956017731512}
   - component: {fileID: 8027552077201351521}
   - component: {fileID: 1510504265161852833}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Cube
   m_TagString: Untagged
   m_Icon: {fileID: 0}

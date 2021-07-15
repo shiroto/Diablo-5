@@ -14,4 +14,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/_GAME/Scenes/PlayerBehaviourTestScene.unity
     guid: 17445e1e63fe8d646bc24e7ff9be7380
+  - enabled: 1
+    path: Assets/_GAME/Scenes/ArrowBehaviourTestSceneArrowGetsDestroyed.unity
+    guid: b62c526f7782240c7a2fdd6873313644
+  - enabled: 1
+    path: Assets/_GAME/Scenes/ArrowBehaviourTestSceneArrowHitsEnemy.unity
+    guid: b12f8147e2c384ce9ad80c25df646602
   m_configObjects: {}
