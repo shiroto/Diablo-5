@@ -10,7 +10,7 @@ public class JumpActionBehaviour : MonoBehaviour
     [SerializeField]
     Vector3 jumpVelocity;
 
-    bool isJumping;
+    public bool isJumping;
 
     Rigidbody rb;
     UnityEngine.AI.NavMeshAgent nma;
@@ -46,7 +46,7 @@ public class JumpActionBehaviour : MonoBehaviour
         dab.enabled = true;
     }
 
-    void jump()
+    public void jump()
     {
         isJumping = true;
         jumpVelocity = nma.velocity;
