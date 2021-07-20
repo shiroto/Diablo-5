@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<coverage version="1.0" date="2021-07-15_17-41-19" tag="">
+  <assembly name="Assembly-CSharp">
+    <class name="AdjustTimeScale" coveredlines="0" coverablelines="33" totallines="53" coveredbranches="0" totalbranches="0" />
+    <class name="FAE.CliffAppearance" coveredlines="0" coverablelines="75" totallines="144" coveredbranches="0" totalbranches="0" />
+    <class name="FAE.FoliageBender" coveredlines="0" coverablelines="7" totallines="33" coveredbranches="0" totalbranches="0" />
+    <class name="FAE.PigmentMapGenerator" coveredlines="0" coverablelines="306" totallines="659" coveredbranches="0" totalbranches="0" />
+    <class name="FAE.TerrainUVUtil" coveredlines="0" coverablelines="98" totallines="198" coveredbranches="0" totalbranches="0" />
+    <class name="FAE.WindController" coveredlines="0" coverablelines="109" totallines="225" coveredbranches="0" totalbranches="0" />
+    <class name="Flythrough" coveredlines="0" coverablelines="68" totallines="100" coveredbranches="0" totalbranches="0" />
+    <class name="FPSDisplay" coveredlines="0" coverablelines="16" totallines="28" coveredbranches="0" totalbranches="0" />
+    <class name="LevelSelect" coveredlines="0" coverablelines="37" totallines="79" coveredbranches="0" totalbranches="0" />
+    <class name="LowPolyMedievalCastlePack.PropellerSpin" coveredlines="0" coverablelines="4" totallines="20" coveredbranches="0" totalbranches="0" />
+    <class name="MenuButton" coveredlines="0" coverablelines="55" totallines="87" coveredbranches="0" totalbranches="0" />
+    <class name="ProximityActivate" coveredlines="0" coverablelines="57" totallines="84" coveredbranches="0" totalbranches="0" />
+    <class name="RampAsset" coveredlines="0" coverablelines="4" totallines="13" coveredbranches="0" totalbranches="0" />
+    <class name="SimpleCharacterMotor" coveredlines="0" coverablelines="43" totallines="76" coveredbranches="0" totalbranches="0" />
+    <class name="SmoothMouseLook" coveredlines="0" coverablelines="104" totallines="147" coveredbranches="0" totalbranches="0" />
+    <class name="UnityTemplateProjects.SimpleCameraController" coveredlines="0" coverablelines="95" totallines="160" coveredbranches="0" totalbranches="0" />
+  </assembly>
+  <assembly name="Assembly-CSharp-Editor">
+    <class name="FAE.CliffAppearanceInspector" coveredlines="0" coverablelines="103" totallines="202" coveredbranches="0" totalbranches="0" />
+    <class name="FAE.FAE_Core" coveredlines="3" coverablelines="182" totallines="375" coveredbranches="0" totalbranches="0" />
+    <class name="FAE.FoliageShaderGUI" coveredlines="0" coverablelines="120" totallines="230" coveredbranches="0" totalbranches="0" />
+    <class name="FAE.GrassShaderGUI" coveredlines="0" coverablelines="175" totallines="352" coveredbranches="0" totalbranches="0" />
+    <class name="FAE.GUIHelper" coveredlines="0" coverablelines="25" totallines="75" coveredbranches="0" totalbranches="0" />
+    <class name="FAE.HelpWindow" coveredlines="0" coverablelines="174" totallines="338" coveredbranches="0" totalbranches="0" />
+    <class name="FAE.PigmentMapGeneratorInspector" coveredlines="0" coverablelines="270" totallines="451" coveredbranches="0" totalbranches="0" />
+    <class name="FAE.TreeBranchShaderGUI" coveredlines="0" coverablelines="113" totallines="229" coveredbranches="0" totalbranches="0" />
+    <class name="FAE.TreeTrunkShaderGUI" coveredlines="0" coverablelines="58" totallines="132" coveredbranches="0" totalbranches="0" />
+    <class name="FAE.WindControllerInspector" coveredlines="0" coverablelines="78" totallines="150" coveredbranches="0" totalbranches="0" />
+    <class name="RampAssetEditor" coveredlines="0" coverablelines="21" totallines="33" coveredbranches="0" totalbranches="0" />
+    <class name="ReadmeEditor" coveredlines="0" coverablelines="98" totallines="158" coveredbranches="0" totalbranches="0" />
+  </assembly>
+  <assembly name="Game">
+    <class name="ArrowAttack" coveredlines="0" coverablelines="4" totallines="12" coveredbranches="0" totalbranches="0" />
+    <class name="ArrowBehaviour" coveredlines="11" coverablelines="11" totallines="28" coveredbranches="0" totalbranches="0" />
+    <class name="AttackTrigger" coveredlines="7" coverablelines="7" totallines="18" coveredbranches="0" totalbranches="0" />
+    <class name="BaseAttack" coveredlines="0" coverablelines="2" totallines="12" coveredbranches="0" totalbranches="0" />
+    <class name="BaseEntity" coveredlines="2" coverablelines="8" totallines="35" coveredbranches="0" totalbranches="0" />
+    <class name="CharacterBehaviour" coveredlines="0" coverablelines="3" totallines="27" coveredbranches="0" totalbranches="0" />
+    <class name="CollisionAttack" coveredlines="3" coverablelines="4" totallines="12" coveredbranches="0" totalbranches="0" />
+    <class name="DamageBehaviour" coveredlines="22" coverablelines="34" totallines="57" coveredbranches="0" totalbranches="0" />
+    <class name="DashActionBehaviour" coveredlines="0" coverablelines="46" totallines="85" coveredbranches="0" totalbranches="0" />
+    <class name="EnemyBehaviour" coveredlines="24" coverablelines="27" totallines="60" coveredbranches="0" totalbranches="0" />
+    <class name="FlamethrowerAttackBehaviour" coveredlines="0" coverablelines="19" totallines="38" coveredbranches="0" totalbranches="0" />
+    <class name="JumpActionBehaviour" coveredlines="0" coverablelines="35" totallines="69" coveredbranches="0" totalbranches="0" />
+    <class name="LightningAttack" coveredlines="9" coverablelines="9" totallines="24" coveredbranches="0" totalbranches="0" />
+    <class name="LightningAttackAreaBehaviour" coveredlines="7" coverablelines="7" totallines="20" coveredbranches="0" totalbranches="0" />
+    <class name="MeeleEnemyBehaviour" coveredlines="20" coverablelines="26" totallines="47" coveredbranches="0" totalbranches="0" />
+    <class name="PlayerBehaviour" coveredlines="47" coverablelines="53" totallines="88" coveredbranches="0" totalbranches="0" />
+    <class name="RangeEnemyBehaviour" coveredlines="0" coverablelines="20" totallines="37" coveredbranches="0" totalbranches="0" />
+    <class name="Stuff" coveredlines="0" coverablelines="9" totallines="31" coveredbranches="0" totalbranches="0" />
+  </assembly>
+  <assembly name="Tests">
+    <class name="ArrowBehaviourTest" coveredlines="30" coverablelines="30" totallines="45" coveredbranches="0" totalbranches="0" />
+    <class name="LighningAttackTest" coveredlines="16" coverablelines="16" totallines="28" coveredbranches="0" totalbranches="0" />
+    <class name="MeleeEnemyAnimationTest" coveredlines="12" coverablelines="12" totallines="33" coveredbranches="0" totalbranches="0" />
+    <class name="PlayerBehaviourTest" coveredlines="15" coverablelines="15" totallines="39" coveredbranches="0" totalbranches="0" />
+  </assembly>
+</coverage>
