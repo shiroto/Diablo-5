@@ -4,21 +4,38 @@ using UnityEngine;
 
 public class FlamethrowerAttackBehaviour : MonoBehaviour
 {
-    [SerializeField] private bool isFiring;
+    [SerializeField] public bool isFiring;
 
     private ParticleSystem flames;
-    
+    private GameObject hitbox;
+
     // Start is called before the first frame update
     void Start()
     {
         flames = GetComponentInChildren<ParticleSystem>();
+        hitbox = GameObject.Find("AttackArea");
 
-        initialize();
+        Initialize();
     }
 
-    void initialize()
+    void Initialize()
     {
         isFiring = false;
+        hitbox.SetActive(false);
+    }
+
+    public void StartFire()
+    {
+        isFiring = true;
+        hitbox.SetActive(true);
+        flames.Play();
+    }
+
+    public void StopFire()
+    {
+        isFiring = false;
+        hitbox.SetActive(false);
+        flames.Stop();
     }
 
     // Update is called once per frame
@@ -26,13 +43,11 @@ public class FlamethrowerAttackBehaviour : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.W) && !isFiring)
         {
-            isFiring = true;
-            flames.Play();
+            StartFire();
         }
-        else if(Input.GetKeyUp(KeyCode.W) && isFiring)
+        else if (Input.GetKeyUp(KeyCode.W) && isFiring)
         {
-            isFiring = false;
-            flames.Stop();
+            StopFire();
         }
     }
 }
