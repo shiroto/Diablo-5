@@ -38,6 +38,7 @@ public abstract class EnemyBehaviour : BaseEntity
 
     protected void FollowPlayer()
     {
+        if (!navAgent.enabled) return;
         navAgent.destination = player.position;
     }
 

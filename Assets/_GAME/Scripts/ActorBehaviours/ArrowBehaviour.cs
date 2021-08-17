@@ -15,7 +15,7 @@ public class ArrowBehaviour : MonoBehaviour
         GetComponent<Rigidbody>().AddRelativeForce((Vector3.up * 0.1f) + Vector3.forward * power);
     }
 
-    private IEnumerator DestroyAfterSeconds(int seconds)
+    public IEnumerator DestroyAfterSeconds(int seconds)
     {
         yield return new WaitForSeconds(seconds);
         Destroy(gameObject);
@@ -23,15 +23,6 @@ public class ArrowBehaviour : MonoBehaviour
 
     void OnTriggerEnter(Collider other)
     {
-        BaseEntity entity = other.gameObject.GetComponent<BaseEntity>();
-
-        if (entity != null)
-        {
-            entity.TakeDamage(10, DamageTypes.Kinetic);
-        }
-
-        Debug.Log($"{other.gameObject.name} in OnTriggerEnter in Arrow");
-        
         Destroy(gameObject);
     }
 }

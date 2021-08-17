@@ -195,7 +195,6 @@ MonoBehaviour:
   maxHealth: 10
   health: 10
   navAgent: {fileID: 6207101563409332629}
-  attackArea: {fileID: 0}
   animator: {fileID: 5866666021909216657, guid: d7ee44ac56d576d42931b25996e8e0f9,
     type: 3}
   speedByHealth:
@@ -681,7 +680,8 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 9
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 5866666021909216657, guid: d7ee44ac56d576d42931b25996e8e0f9, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: d7ee44ac56d576d42931b25996e8e0f9, type: 3}
 --- !u!4 &6068463111413961645 stripped
 Transform:

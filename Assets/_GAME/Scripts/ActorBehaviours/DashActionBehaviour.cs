@@ -16,7 +16,7 @@ public class DashActionBehaviour : MonoBehaviour
     [SerializeField]
     Vector3 direction;
     
-    bool isDashing;
+    public bool isDashing;
 
     Rigidbody rb;
     UnityEngine.AI.NavMeshAgent nma;
@@ -33,7 +33,7 @@ public class DashActionBehaviour : MonoBehaviour
         initialize();
     }
 
-    void startDash()
+    public void startDash()
     {
         direction = nma.velocity;
         nma.enabled = false;
@@ -70,7 +70,9 @@ public class DashActionBehaviour : MonoBehaviour
 
     void Update()
     {
-        if(!isDashing && Stuff.GetButtonDown("Hotkey2")) {
+        
+        
+        if(!isDashing && Input.GetMouseButtonDown(1)) {
             startDash();
         }
         

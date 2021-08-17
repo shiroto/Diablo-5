@@ -16,7 +16,7 @@ public class PlayerBehaviour : BaseEntity
 
     private void Update()
     {
-        if (Input.GetMouseButton(0))
+        if (Input.GetMouseButton(0) && agent.enabled)
         {
             SetDestinationToMousePosition(Input.mousePosition);
         }
@@ -34,6 +34,7 @@ public class PlayerBehaviour : BaseEntity
 
     private bool hasReachedDestination()
     {
+        if (!agent.enabled) return false;
         // Debug.Log($"path pendng: {agent.pathPending}, remainingDistance: {agent.remainingDistance}, hasPath: {agent.hasPath}");
         if (agent.pathPending) return false;
         if (agent.remainingDistance > agent.stoppingDistance) return false;
